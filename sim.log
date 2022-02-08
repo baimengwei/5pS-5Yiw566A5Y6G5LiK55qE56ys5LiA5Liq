@@ -1,0 +1,1360 @@
+Command: ./simv -l sim.log +UVM_VERBOSITY=UVM_MEDIUM +UVM_TESTNAME=test_ral_seq +UVM_LOG_RECORD +UVM_TR_RECORD
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Feb  8 07:41 2022
+----------------------------------------------------------------
+UVM-1.1d.Synopsys
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_WARNING @ 0: reporter [TPRGED] Type name 'packet' already registered with factory. No string-based lookup support for multiple types with the same type name.
+VCD+ Writer L-2016.06_Full64 Copyright (c) 1991-2016 by Synopsys Inc.
+UVM_INFO /tools/synopsys/vcs/vcs-mx_vL-2016.06/etc/uvm-1.1/vcs/uvm_custom_install_vcs_recorder.sv(72) @ 0: reporter [VCS_TR_AUTO] +UVM_TR_RECORD implicitly enables recording_details to UVM_FULL for all components. For explicit control use +UVM_DISABLE_AUTO_COMPONENT and set recording_detail on components accordingly
+UVM_INFO @ 0.0ns: reporter [RNTST] Running test test_ral_seq...
+UVM_INFO reset_agent.sv(28) @ 0.0ns: uvm_test_top.env.r_agt [DEBUG_RESET] is_active is UVM_ACTIVE
+UVM_INFO reset_transaction.sv(18) @ 0.0ns: reporter@@reset_transaction [TRACE] test.\reset_transaction::new 
+UVM_INFO reset_transaction.sv(18) @ 150.0ns: reporter@@reset_transaction [TRACE] test.\reset_transaction::new 
+UVM_INFO ral_host_agent.sv(45) @ 1650.0ns: uvm_test_top.env.h_agt [RAL_HOST_AGENT] test.\ral_host_agent::configure_phase 
+UVM_INFO host_driver.sv(27) @ 1650.0ns: uvm_test_top.env.h_agt.drv [HOST_GET_BEFORE] ---------------------------------------------------------------------------
+Name                           Type       Size  Value                      
+---------------------------------------------------------------------------
+tr                             host_data  -     @7901                      
+  kind                         kind_e     32    READ                       
+  address                      integral   16    'h100                      
+  data                         integral   16    'h0                        
+  begin_time                   time       64    1650.0ns                   
+  depth                        int        32    'd2                        
+  parent sequence (name)       string     8     host_seq                   
+  parent sequence (full name)  string     8     host_seq                   
+  sequencer                    string     27    uvm_test_top.env.h_agt.seqr
+---------------------------------------------------------------------------
+
+UVM_INFO host_driver.sv(30) @ 1750.0ns: uvm_test_top.env.h_agt.drv [HOST_GET_AFTER] ---------------------------------------------------------------------------
+Name                           Type       Size  Value                      
+---------------------------------------------------------------------------
+tr                             host_data  -     @7901                      
+  kind                         kind_e     32    READ                       
+  address                      integral   16    'h100                      
+  data                         integral   16    'hffff                     
+  begin_time                   time       64    1650.0ns                   
+  depth                        int        32    'd2                        
+  parent sequence (name)       string     8     host_seq                   
+  parent sequence (full name)  string     8     host_seq                   
+  sequencer                    string     27    uvm_test_top.env.h_agt.seqr
+---------------------------------------------------------------------------
+
+UVM_INFO ral_host_sequence.sv(22) @ 1750.0ns: reporter@@host_seq [RAL_READ] read_port_lock ffff
+UVM_INFO host_driver.sv(27) @ 1750.0ns: uvm_test_top.env.h_agt.drv [HOST_GET_BEFORE] ---------------------------------------------------------------------------
+Name                           Type       Size  Value                      
+---------------------------------------------------------------------------
+tr                             host_data  -     @7911                      
+  kind                         kind_e     32    WRITE                      
+  address                      integral   16    'h100                      
+  data                         integral   16    'hffff                     
+  begin_time                   time       64    1750.0ns                   
+  depth                        int        32    'd2                        
+  parent sequence (name)       string     8     host_seq                   
+  parent sequence (full name)  string     8     host_seq                   
+  sequencer                    string     27    uvm_test_top.env.h_agt.seqr
+---------------------------------------------------------------------------
+
+UVM_INFO host_driver.sv(30) @ 1850.0ns: uvm_test_top.env.h_agt.drv [HOST_GET_AFTER] ---------------------------------------------------------------------------
+Name                           Type       Size  Value                      
+---------------------------------------------------------------------------
+tr                             host_data  -     @7911                      
+  kind                         kind_e     32    WRITE                      
+  address                      integral   16    'h100                      
+  data                         integral   16    'hffff                     
+  begin_time                   time       64    1750.0ns                   
+  depth                        int        32    'd2                        
+  parent sequence (name)       string     8     host_seq                   
+  parent sequence (full name)  string     8     host_seq                   
+  sequencer                    string     27    uvm_test_top.env.h_agt.seqr
+---------------------------------------------------------------------------
+
+UVM_INFO ral_host_sequence.sv(24) @ 1850.0ns: reporter@@host_seq [RAL_WRITE] read_port_lock ffff
+UVM_INFO host_driver.sv(27) @ 1850.0ns: uvm_test_top.env.h_agt.drv [HOST_GET_BEFORE] ---------------------------------------------------------------------------
+Name                           Type       Size  Value                      
+---------------------------------------------------------------------------
+tr                             host_data  -     @7919                      
+  kind                         kind_e     32    READ                       
+  address                      integral   16    'h100                      
+  data                         integral   16    'h0                        
+  begin_time                   time       64    1850.0ns                   
+  depth                        int        32    'd2                        
+  parent sequence (name)       string     8     host_seq                   
+  parent sequence (full name)  string     8     host_seq                   
+  sequencer                    string     27    uvm_test_top.env.h_agt.seqr
+---------------------------------------------------------------------------
+
+UVM_INFO host_driver.sv(30) @ 1950.0ns: uvm_test_top.env.h_agt.drv [HOST_GET_AFTER] ---------------------------------------------------------------------------
+Name                           Type       Size  Value                      
+---------------------------------------------------------------------------
+tr                             host_data  -     @7919                      
+  kind                         kind_e     32    READ                       
+  address                      integral   16    'h100                      
+  data                         integral   16    'h0                        
+  begin_time                   time       64    1850.0ns                   
+  depth                        int        32    'd2                        
+  parent sequence (name)       string     8     host_seq                   
+  parent sequence (full name)  string     8     host_seq                   
+  sequencer                    string     27    uvm_test_top.env.h_agt.seqr
+---------------------------------------------------------------------------
+
+UVM_INFO ral_host_sequence.sv(26) @ 1950.0ns: reporter@@host_seq [RAL_READ] read_port_lock 0
+UVM_INFO packet_sequence.sv(27) @ 1950.0ns: uvm_test_top.env.i_agt[0].seqr@@packet_sequence [DATA_INFO] item_count 10, port_id 0, da_enable 65535
+UVM_INFO packet_sequence.sv(27) @ 1950.0ns: uvm_test_top.env.i_agt[10].seqr@@packet_sequence [DATA_INFO] item_count 10, port_id 10, da_enable 65535
+UVM_INFO packet_sequence.sv(27) @ 1950.0ns: uvm_test_top.env.i_agt[11].seqr@@packet_sequence [DATA_INFO] item_count 10, port_id 11, da_enable 65535
+UVM_INFO packet_sequence.sv(27) @ 1950.0ns: uvm_test_top.env.i_agt[12].seqr@@packet_sequence [DATA_INFO] item_count 10, port_id 12, da_enable 65535
+UVM_INFO packet_sequence.sv(27) @ 1950.0ns: uvm_test_top.env.i_agt[13].seqr@@packet_sequence [DATA_INFO] item_count 10, port_id 13, da_enable 65535
+UVM_INFO packet_sequence.sv(27) @ 1950.0ns: uvm_test_top.env.i_agt[14].seqr@@packet_sequence [DATA_INFO] item_count 10, port_id 14, da_enable 65535
+UVM_INFO packet_sequence.sv(27) @ 1950.0ns: uvm_test_top.env.i_agt[15].seqr@@packet_sequence [DATA_INFO] item_count 10, port_id 15, da_enable 65535
+UVM_INFO packet_sequence.sv(27) @ 1950.0ns: uvm_test_top.env.i_agt[1].seqr@@packet_sequence [DATA_INFO] item_count 10, port_id 1, da_enable 65535
+UVM_INFO packet_sequence.sv(27) @ 1950.0ns: uvm_test_top.env.i_agt[2].seqr@@packet_sequence [DATA_INFO] item_count 10, port_id 2, da_enable 65535
+UVM_INFO packet_sequence.sv(27) @ 1950.0ns: uvm_test_top.env.i_agt[3].seqr@@packet_sequence [DATA_INFO] item_count 10, port_id 3, da_enable 65535
+UVM_INFO packet_sequence.sv(27) @ 1950.0ns: uvm_test_top.env.i_agt[4].seqr@@packet_sequence [DATA_INFO] item_count 10, port_id 4, da_enable 65535
+UVM_INFO packet_sequence.sv(27) @ 1950.0ns: uvm_test_top.env.i_agt[5].seqr@@packet_sequence [DATA_INFO] item_count 10, port_id 5, da_enable 65535
+UVM_INFO packet_sequence.sv(27) @ 1950.0ns: uvm_test_top.env.i_agt[6].seqr@@packet_sequence [DATA_INFO] item_count 10, port_id 6, da_enable 65535
+UVM_INFO packet_sequence.sv(27) @ 1950.0ns: uvm_test_top.env.i_agt[7].seqr@@packet_sequence [DATA_INFO] item_count 10, port_id 7, da_enable 65535
+UVM_INFO packet_sequence.sv(27) @ 1950.0ns: uvm_test_top.env.i_agt[8].seqr@@packet_sequence [DATA_INFO] item_count 10, port_id 8, da_enable 65535
+UVM_INFO packet_sequence.sv(27) @ 1950.0ns: uvm_test_top.env.i_agt[9].seqr@@packet_sequence [DATA_INFO] item_count 10, port_id 9, da_enable 65535
+UVM_INFO scoreboard.sv(29) @ 3650.0ns: uvm_test_top.env.sb [SB_INPUT_GET3] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 3650.0ns: uvm_test_top.env.i_agt[11].i_mon [MONITOR_INPUT_SEND] port_id 11 send a packet
+UVM_INFO scoreboard.sv(29) @ 3650.0ns: uvm_test_top.env.sb [SB_INPUT_GET15] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 3650.0ns: uvm_test_top.env.i_agt[4].i_mon [MONITOR_INPUT_SEND] port_id 4 send a packet
+UVM_INFO scoreboard.sv(29) @ 3650.0ns: uvm_test_top.env.sb [SB_INPUT_GET4] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 3650.0ns: uvm_test_top.env.i_agt[5].i_mon [MONITOR_INPUT_SEND] port_id 5 send a packet
+UVM_INFO scoreboard.sv(29) @ 3650.0ns: uvm_test_top.env.sb [SB_INPUT_GET11] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 3650.0ns: uvm_test_top.env.i_agt[6].i_mon [MONITOR_INPUT_SEND] port_id 6 send a packet
+UVM_INFO driver.sv(26) @ 3650.0ns: uvm_test_top.env.i_agt[6].drv [PACKET_GET] port_id 6 get a packet
+UVM_INFO driver.sv(26) @ 3650.0ns: uvm_test_top.env.i_agt[5].drv [PACKET_GET] port_id 5 get a packet
+UVM_INFO driver.sv(26) @ 3650.0ns: uvm_test_top.env.i_agt[4].drv [PACKET_GET] port_id 4 get a packet
+UVM_INFO driver.sv(26) @ 3650.0ns: uvm_test_top.env.i_agt[11].drv [PACKET_GET] port_id 11 get a packet
+UVM_INFO packet_sequence.sv(52) @ 3650.0ns: uvm_test_top.env.i_agt[6].seqr@@packet_sequence [PACKET_SEND] port_id 6 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 3650.0ns: uvm_test_top.env.i_agt[5].seqr@@packet_sequence [PACKET_SEND] port_id 5 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 3650.0ns: uvm_test_top.env.i_agt[4].seqr@@packet_sequence [PACKET_SEND] port_id 4 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 3650.0ns: uvm_test_top.env.i_agt[11].seqr@@packet_sequence [PACKET_SEND] port_id 11 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 3750.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET11] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 3750.0ns: uvm_test_top.env.o_agt[11].o_mon [MONITOR_OUTPUT_SEND] port_id 11 send a packet
+UVM_INFO scoreboard.sv(34) @ 3750.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET15] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 3750.0ns: uvm_test_top.env.o_agt[15].o_mon [MONITOR_OUTPUT_SEND] port_id 15 send a packet
+UVM_INFO scoreboard.sv(34) @ 3750.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET3] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 3750.0ns: uvm_test_top.env.o_agt[3].o_mon [MONITOR_OUTPUT_SEND] port_id 3 send a packet
+UVM_INFO scoreboard.sv(34) @ 3750.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET4] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 3750.0ns: uvm_test_top.env.o_agt[4].o_mon [MONITOR_OUTPUT_SEND] port_id 4 send a packet
+UVM_INFO @ 3750.0ns: uvm_test_top.env.sb.comparator[11] [Comparator Match] 
+UVM_INFO @ 3750.0ns: uvm_test_top.env.sb.comparator[15] [Comparator Match] 
+UVM_INFO @ 3750.0ns: uvm_test_top.env.sb.comparator[3] [Comparator Match] 
+UVM_INFO @ 3750.0ns: uvm_test_top.env.sb.comparator[4] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 4450.0ns: uvm_test_top.env.sb [SB_INPUT_GET5] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 4450.0ns: uvm_test_top.env.i_agt[0].i_mon [MONITOR_INPUT_SEND] port_id 0 send a packet
+UVM_INFO scoreboard.sv(29) @ 4450.0ns: uvm_test_top.env.sb [SB_INPUT_GET12] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 4450.0ns: uvm_test_top.env.i_agt[10].i_mon [MONITOR_INPUT_SEND] port_id 10 send a packet
+UVM_INFO scoreboard.sv(29) @ 4450.0ns: uvm_test_top.env.sb [SB_INPUT_GET1] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 4450.0ns: uvm_test_top.env.i_agt[7].i_mon [MONITOR_INPUT_SEND] port_id 7 send a packet
+UVM_INFO driver.sv(26) @ 4450.0ns: uvm_test_top.env.i_agt[7].drv [PACKET_GET] port_id 7 get a packet
+UVM_INFO driver.sv(26) @ 4450.0ns: uvm_test_top.env.i_agt[10].drv [PACKET_GET] port_id 10 get a packet
+UVM_INFO driver.sv(26) @ 4450.0ns: uvm_test_top.env.i_agt[0].drv [PACKET_GET] port_id 0 get a packet
+UVM_INFO packet_sequence.sv(52) @ 4450.0ns: uvm_test_top.env.i_agt[7].seqr@@packet_sequence [PACKET_SEND] port_id 7 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 4450.0ns: uvm_test_top.env.i_agt[10].seqr@@packet_sequence [PACKET_SEND] port_id 10 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 4450.0ns: uvm_test_top.env.i_agt[0].seqr@@packet_sequence [PACKET_SEND] port_id 0 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 4550.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET12] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 4550.0ns: uvm_test_top.env.o_agt[12].o_mon [MONITOR_OUTPUT_SEND] port_id 12 send a packet
+UVM_INFO scoreboard.sv(34) @ 4550.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET1] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 4550.0ns: uvm_test_top.env.o_agt[1].o_mon [MONITOR_OUTPUT_SEND] port_id 1 send a packet
+UVM_INFO scoreboard.sv(34) @ 4550.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET5] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 4550.0ns: uvm_test_top.env.o_agt[5].o_mon [MONITOR_OUTPUT_SEND] port_id 5 send a packet
+UVM_INFO @ 4550.0ns: uvm_test_top.env.sb.comparator[12] [Comparator Match] 
+UVM_INFO @ 4550.0ns: uvm_test_top.env.sb.comparator[1] [Comparator Match] 
+UVM_INFO @ 4550.0ns: uvm_test_top.env.sb.comparator[5] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 5250.0ns: uvm_test_top.env.sb [SB_INPUT_GET8] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 5250.0ns: uvm_test_top.env.i_agt[13].i_mon [MONITOR_INPUT_SEND] port_id 13 send a packet
+UVM_INFO scoreboard.sv(29) @ 5250.0ns: uvm_test_top.env.sb [SB_INPUT_GET10] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 5250.0ns: uvm_test_top.env.i_agt[1].i_mon [MONITOR_INPUT_SEND] port_id 1 send a packet
+UVM_INFO scoreboard.sv(29) @ 5250.0ns: uvm_test_top.env.sb [SB_INPUT_GET14] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 5250.0ns: uvm_test_top.env.i_agt[2].i_mon [MONITOR_INPUT_SEND] port_id 2 send a packet
+UVM_INFO scoreboard.sv(29) @ 5250.0ns: uvm_test_top.env.sb [SB_INPUT_GET13] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 5250.0ns: uvm_test_top.env.i_agt[8].i_mon [MONITOR_INPUT_SEND] port_id 8 send a packet
+UVM_INFO driver.sv(26) @ 5250.0ns: uvm_test_top.env.i_agt[8].drv [PACKET_GET] port_id 8 get a packet
+UVM_INFO driver.sv(26) @ 5250.0ns: uvm_test_top.env.i_agt[2].drv [PACKET_GET] port_id 2 get a packet
+UVM_INFO driver.sv(26) @ 5250.0ns: uvm_test_top.env.i_agt[1].drv [PACKET_GET] port_id 1 get a packet
+UVM_INFO driver.sv(26) @ 5250.0ns: uvm_test_top.env.i_agt[13].drv [PACKET_GET] port_id 13 get a packet
+UVM_INFO packet_sequence.sv(52) @ 5250.0ns: uvm_test_top.env.i_agt[8].seqr@@packet_sequence [PACKET_SEND] port_id 8 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 5250.0ns: uvm_test_top.env.i_agt[2].seqr@@packet_sequence [PACKET_SEND] port_id 2 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 5250.0ns: uvm_test_top.env.i_agt[1].seqr@@packet_sequence [PACKET_SEND] port_id 1 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 5250.0ns: uvm_test_top.env.i_agt[13].seqr@@packet_sequence [PACKET_SEND] port_id 13 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 5350.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET10] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 5350.0ns: uvm_test_top.env.o_agt[10].o_mon [MONITOR_OUTPUT_SEND] port_id 10 send a packet
+UVM_INFO scoreboard.sv(34) @ 5350.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET13] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 5350.0ns: uvm_test_top.env.o_agt[13].o_mon [MONITOR_OUTPUT_SEND] port_id 13 send a packet
+UVM_INFO scoreboard.sv(34) @ 5350.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET14] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 5350.0ns: uvm_test_top.env.o_agt[14].o_mon [MONITOR_OUTPUT_SEND] port_id 14 send a packet
+UVM_INFO scoreboard.sv(34) @ 5350.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET8] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 5350.0ns: uvm_test_top.env.o_agt[8].o_mon [MONITOR_OUTPUT_SEND] port_id 8 send a packet
+UVM_INFO @ 5350.0ns: uvm_test_top.env.sb.comparator[10] [Comparator Match] 
+UVM_INFO @ 5350.0ns: uvm_test_top.env.sb.comparator[13] [Comparator Match] 
+UVM_INFO @ 5350.0ns: uvm_test_top.env.sb.comparator[14] [Comparator Match] 
+UVM_INFO @ 5350.0ns: uvm_test_top.env.sb.comparator[8] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 5650.0ns: uvm_test_top.env.sb [SB_INPUT_GET5] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 5650.0ns: uvm_test_top.env.i_agt[9].i_mon [MONITOR_INPUT_SEND] port_id 9 send a packet
+UVM_INFO driver.sv(26) @ 5650.0ns: uvm_test_top.env.i_agt[9].drv [PACKET_GET] port_id 9 get a packet
+UVM_INFO packet_sequence.sv(52) @ 5650.0ns: uvm_test_top.env.i_agt[9].seqr@@packet_sequence [PACKET_SEND] port_id 9 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 5750.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET5] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 5750.0ns: uvm_test_top.env.o_agt[5].o_mon [MONITOR_OUTPUT_SEND] port_id 5 send a packet
+UVM_INFO @ 5750.0ns: uvm_test_top.env.sb.comparator[5] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 6450.0ns: uvm_test_top.env.sb [SB_INPUT_GET10] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 6450.0ns: uvm_test_top.env.i_agt[3].i_mon [MONITOR_INPUT_SEND] port_id 3 send a packet
+UVM_INFO scoreboard.sv(29) @ 6450.0ns: uvm_test_top.env.sb [SB_INPUT_GET4] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 6450.0ns: uvm_test_top.env.i_agt[15].i_mon [MONITOR_INPUT_SEND] port_id 15 send a packet
+UVM_INFO driver.sv(26) @ 6450.0ns: uvm_test_top.env.i_agt[3].drv [PACKET_GET] port_id 3 get a packet
+UVM_INFO driver.sv(26) @ 6450.0ns: uvm_test_top.env.i_agt[15].drv [PACKET_GET] port_id 15 get a packet
+UVM_INFO packet_sequence.sv(52) @ 6450.0ns: uvm_test_top.env.i_agt[3].seqr@@packet_sequence [PACKET_SEND] port_id 3 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 6450.0ns: uvm_test_top.env.i_agt[15].seqr@@packet_sequence [PACKET_SEND] port_id 15 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 6550.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET10] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 6550.0ns: uvm_test_top.env.o_agt[10].o_mon [MONITOR_OUTPUT_SEND] port_id 10 send a packet
+UVM_INFO scoreboard.sv(34) @ 6550.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET4] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 6550.0ns: uvm_test_top.env.o_agt[4].o_mon [MONITOR_OUTPUT_SEND] port_id 4 send a packet
+UVM_INFO @ 6550.0ns: uvm_test_top.env.sb.comparator[10] [Comparator Match] 
+UVM_INFO @ 6550.0ns: uvm_test_top.env.sb.comparator[4] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 6850.0ns: uvm_test_top.env.sb [SB_INPUT_GET5] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 6850.0ns: uvm_test_top.env.i_agt[11].i_mon [MONITOR_INPUT_SEND] port_id 11 send a packet
+UVM_INFO driver.sv(26) @ 6850.0ns: uvm_test_top.env.i_agt[11].drv [PACKET_GET] port_id 11 get a packet
+UVM_INFO packet_sequence.sv(52) @ 6850.0ns: uvm_test_top.env.i_agt[11].seqr@@packet_sequence [PACKET_SEND] port_id 11 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 6950.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET5] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 6950.0ns: uvm_test_top.env.o_agt[5].o_mon [MONITOR_OUTPUT_SEND] port_id 5 send a packet
+UVM_INFO scoreboard.sv(29) @ 6950.0ns: uvm_test_top.env.sb [SB_INPUT_GET6] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 6950.0ns: uvm_test_top.env.i_agt[10].i_mon [MONITOR_INPUT_SEND] port_id 10 send a packet
+UVM_INFO scoreboard.sv(29) @ 6950.0ns: uvm_test_top.env.sb [SB_INPUT_GET15] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 6950.0ns: uvm_test_top.env.i_agt[5].i_mon [MONITOR_INPUT_SEND] port_id 5 send a packet
+UVM_INFO scoreboard.sv(29) @ 6950.0ns: uvm_test_top.env.sb [SB_INPUT_GET11] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 6950.0ns: uvm_test_top.env.i_agt[6].i_mon [MONITOR_INPUT_SEND] port_id 6 send a packet
+UVM_INFO driver.sv(26) @ 6950.0ns: uvm_test_top.env.i_agt[5].drv [PACKET_GET] port_id 5 get a packet
+UVM_INFO driver.sv(26) @ 6950.0ns: uvm_test_top.env.i_agt[6].drv [PACKET_GET] port_id 6 get a packet
+UVM_INFO driver.sv(26) @ 6950.0ns: uvm_test_top.env.i_agt[10].drv [PACKET_GET] port_id 10 get a packet
+UVM_INFO @ 6950.0ns: uvm_test_top.env.sb.comparator[5] [Comparator Match] 
+UVM_INFO packet_sequence.sv(52) @ 6950.0ns: uvm_test_top.env.i_agt[5].seqr@@packet_sequence [PACKET_SEND] port_id 5 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 6950.0ns: uvm_test_top.env.i_agt[6].seqr@@packet_sequence [PACKET_SEND] port_id 6 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 6950.0ns: uvm_test_top.env.i_agt[10].seqr@@packet_sequence [PACKET_SEND] port_id 10 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 7050.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET6] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 7050.0ns: uvm_test_top.env.o_agt[6].o_mon [MONITOR_OUTPUT_SEND] port_id 6 send a packet
+UVM_INFO scoreboard.sv(34) @ 7050.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET11] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 7050.0ns: uvm_test_top.env.o_agt[11].o_mon [MONITOR_OUTPUT_SEND] port_id 11 send a packet
+UVM_INFO scoreboard.sv(34) @ 7050.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET15] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 7050.0ns: uvm_test_top.env.o_agt[15].o_mon [MONITOR_OUTPUT_SEND] port_id 15 send a packet
+UVM_INFO @ 7050.0ns: uvm_test_top.env.sb.comparator[6] [Comparator Match] 
+UVM_INFO @ 7050.0ns: uvm_test_top.env.sb.comparator[11] [Comparator Match] 
+UVM_INFO @ 7050.0ns: uvm_test_top.env.sb.comparator[15] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 7250.0ns: uvm_test_top.env.sb [SB_INPUT_GET14] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 7250.0ns: uvm_test_top.env.i_agt[4].i_mon [MONITOR_INPUT_SEND] port_id 4 send a packet
+UVM_INFO scoreboard.sv(29) @ 7250.0ns: uvm_test_top.env.sb [SB_INPUT_GET1] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 7250.0ns: uvm_test_top.env.i_agt[14].i_mon [MONITOR_INPUT_SEND] port_id 14 send a packet
+UVM_INFO driver.sv(26) @ 7250.0ns: uvm_test_top.env.i_agt[14].drv [PACKET_GET] port_id 14 get a packet
+UVM_INFO driver.sv(26) @ 7250.0ns: uvm_test_top.env.i_agt[4].drv [PACKET_GET] port_id 4 get a packet
+UVM_INFO packet_sequence.sv(52) @ 7250.0ns: uvm_test_top.env.i_agt[14].seqr@@packet_sequence [PACKET_SEND] port_id 14 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 7250.0ns: uvm_test_top.env.i_agt[4].seqr@@packet_sequence [PACKET_SEND] port_id 4 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 7350.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET14] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 7350.0ns: uvm_test_top.env.o_agt[14].o_mon [MONITOR_OUTPUT_SEND] port_id 14 send a packet
+UVM_INFO scoreboard.sv(34) @ 7350.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET1] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 7350.0ns: uvm_test_top.env.o_agt[1].o_mon [MONITOR_OUTPUT_SEND] port_id 1 send a packet
+UVM_INFO @ 7350.0ns: uvm_test_top.env.sb.comparator[14] [Comparator Match] 
+UVM_INFO @ 7350.0ns: uvm_test_top.env.sb.comparator[1] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 7750.0ns: uvm_test_top.env.sb [SB_INPUT_GET13] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 7750.0ns: uvm_test_top.env.i_agt[2].i_mon [MONITOR_INPUT_SEND] port_id 2 send a packet
+UVM_INFO driver.sv(26) @ 7750.0ns: uvm_test_top.env.i_agt[2].drv [PACKET_GET] port_id 2 get a packet
+UVM_INFO packet_sequence.sv(52) @ 7750.0ns: uvm_test_top.env.i_agt[2].seqr@@packet_sequence [PACKET_SEND] port_id 2 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 7850.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET13] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 7850.0ns: uvm_test_top.env.o_agt[13].o_mon [MONITOR_OUTPUT_SEND] port_id 13 send a packet
+UVM_INFO @ 7850.0ns: uvm_test_top.env.sb.comparator[13] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 8050.0ns: uvm_test_top.env.sb [SB_INPUT_GET5] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 8050.0ns: uvm_test_top.env.i_agt[0].i_mon [MONITOR_INPUT_SEND] port_id 0 send a packet
+UVM_INFO driver.sv(26) @ 8050.0ns: uvm_test_top.env.i_agt[0].drv [PACKET_GET] port_id 0 get a packet
+UVM_INFO packet_sequence.sv(52) @ 8050.0ns: uvm_test_top.env.i_agt[0].seqr@@packet_sequence [PACKET_SEND] port_id 0 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 8150.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET5] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 8150.0ns: uvm_test_top.env.o_agt[5].o_mon [MONITOR_OUTPUT_SEND] port_id 5 send a packet
+UVM_INFO scoreboard.sv(29) @ 8150.0ns: uvm_test_top.env.sb [SB_INPUT_GET11] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 8150.0ns: uvm_test_top.env.i_agt[15].i_mon [MONITOR_INPUT_SEND] port_id 15 send a packet
+UVM_INFO driver.sv(26) @ 8150.0ns: uvm_test_top.env.i_agt[15].drv [PACKET_GET] port_id 15 get a packet
+UVM_INFO @ 8150.0ns: uvm_test_top.env.sb.comparator[5] [Comparator Match] 
+UVM_INFO packet_sequence.sv(52) @ 8150.0ns: uvm_test_top.env.i_agt[15].seqr@@packet_sequence [PACKET_SEND] port_id 15 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 8250.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET11] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 8250.0ns: uvm_test_top.env.o_agt[11].o_mon [MONITOR_OUTPUT_SEND] port_id 11 send a packet
+UVM_INFO @ 8250.0ns: uvm_test_top.env.sb.comparator[11] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 8450.0ns: uvm_test_top.env.sb [SB_INPUT_GET4] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 8450.0ns: uvm_test_top.env.i_agt[8].i_mon [MONITOR_INPUT_SEND] port_id 8 send a packet
+UVM_INFO driver.sv(26) @ 8450.0ns: uvm_test_top.env.i_agt[8].drv [PACKET_GET] port_id 8 get a packet
+UVM_INFO packet_sequence.sv(52) @ 8450.0ns: uvm_test_top.env.i_agt[8].seqr@@packet_sequence [PACKET_SEND] port_id 8 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(29) @ 8550.0ns: uvm_test_top.env.sb [SB_INPUT_GET1] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 8550.0ns: uvm_test_top.env.i_agt[11].i_mon [MONITOR_INPUT_SEND] port_id 11 send a packet
+UVM_INFO scoreboard.sv(34) @ 8550.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET4] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 8550.0ns: uvm_test_top.env.o_agt[4].o_mon [MONITOR_OUTPUT_SEND] port_id 4 send a packet
+UVM_INFO driver.sv(26) @ 8550.0ns: uvm_test_top.env.i_agt[11].drv [PACKET_GET] port_id 11 get a packet
+UVM_INFO @ 8550.0ns: uvm_test_top.env.sb.comparator[4] [Comparator Match] 
+UVM_INFO packet_sequence.sv(52) @ 8550.0ns: uvm_test_top.env.i_agt[11].seqr@@packet_sequence [PACKET_SEND] port_id 11 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 8650.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET1] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 8650.0ns: uvm_test_top.env.o_agt[1].o_mon [MONITOR_OUTPUT_SEND] port_id 1 send a packet
+UVM_INFO @ 8650.0ns: uvm_test_top.env.sb.comparator[1] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 8950.0ns: uvm_test_top.env.sb [SB_INPUT_GET15] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 8950.0ns: uvm_test_top.env.i_agt[7].i_mon [MONITOR_INPUT_SEND] port_id 7 send a packet
+UVM_INFO scoreboard.sv(29) @ 8950.0ns: uvm_test_top.env.sb [SB_INPUT_GET6] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 8950.0ns: uvm_test_top.env.i_agt[9].i_mon [MONITOR_INPUT_SEND] port_id 9 send a packet
+UVM_INFO scoreboard.sv(29) @ 8950.0ns: uvm_test_top.env.sb [SB_INPUT_GET12] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 8950.0ns: uvm_test_top.env.i_agt[3].i_mon [MONITOR_INPUT_SEND] port_id 3 send a packet
+UVM_INFO driver.sv(26) @ 8950.0ns: uvm_test_top.env.i_agt[7].drv [PACKET_GET] port_id 7 get a packet
+UVM_INFO driver.sv(26) @ 8950.0ns: uvm_test_top.env.i_agt[9].drv [PACKET_GET] port_id 9 get a packet
+UVM_INFO driver.sv(26) @ 8950.0ns: uvm_test_top.env.i_agt[3].drv [PACKET_GET] port_id 3 get a packet
+UVM_INFO packet_sequence.sv(52) @ 8950.0ns: uvm_test_top.env.i_agt[7].seqr@@packet_sequence [PACKET_SEND] port_id 7 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 8950.0ns: uvm_test_top.env.i_agt[9].seqr@@packet_sequence [PACKET_SEND] port_id 9 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 8950.0ns: uvm_test_top.env.i_agt[3].seqr@@packet_sequence [PACKET_SEND] port_id 3 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 9050.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET12] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 9050.0ns: uvm_test_top.env.o_agt[12].o_mon [MONITOR_OUTPUT_SEND] port_id 12 send a packet
+UVM_INFO scoreboard.sv(34) @ 9050.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET6] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 9050.0ns: uvm_test_top.env.o_agt[6].o_mon [MONITOR_OUTPUT_SEND] port_id 6 send a packet
+UVM_INFO scoreboard.sv(34) @ 9050.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET15] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 9050.0ns: uvm_test_top.env.o_agt[15].o_mon [MONITOR_OUTPUT_SEND] port_id 15 send a packet
+UVM_INFO @ 9050.0ns: uvm_test_top.env.sb.comparator[12] [Comparator Match] 
+UVM_INFO @ 9050.0ns: uvm_test_top.env.sb.comparator[6] [Comparator Match] 
+UVM_INFO @ 9050.0ns: uvm_test_top.env.sb.comparator[15] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 9250.0ns: uvm_test_top.env.sb [SB_INPUT_GET5] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 9250.0ns: uvm_test_top.env.i_agt[10].i_mon [MONITOR_INPUT_SEND] port_id 10 send a packet
+UVM_INFO scoreboard.sv(29) @ 9250.0ns: uvm_test_top.env.sb [SB_INPUT_GET14] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 9250.0ns: uvm_test_top.env.i_agt[12].i_mon [MONITOR_INPUT_SEND] port_id 12 send a packet
+UVM_INFO driver.sv(26) @ 9250.0ns: uvm_test_top.env.i_agt[12].drv [PACKET_GET] port_id 12 get a packet
+UVM_INFO driver.sv(26) @ 9250.0ns: uvm_test_top.env.i_agt[10].drv [PACKET_GET] port_id 10 get a packet
+UVM_INFO packet_sequence.sv(52) @ 9250.0ns: uvm_test_top.env.i_agt[12].seqr@@packet_sequence [PACKET_SEND] port_id 12 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 9250.0ns: uvm_test_top.env.i_agt[10].seqr@@packet_sequence [PACKET_SEND] port_id 10 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(29) @ 9350.0ns: uvm_test_top.env.sb [SB_INPUT_GET11] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 9350.0ns: uvm_test_top.env.i_agt[1].i_mon [MONITOR_INPUT_SEND] port_id 1 send a packet
+UVM_INFO scoreboard.sv(34) @ 9350.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET5] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 9350.0ns: uvm_test_top.env.o_agt[5].o_mon [MONITOR_OUTPUT_SEND] port_id 5 send a packet
+UVM_INFO scoreboard.sv(34) @ 9350.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET14] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 9350.0ns: uvm_test_top.env.o_agt[14].o_mon [MONITOR_OUTPUT_SEND] port_id 14 send a packet
+UVM_INFO driver.sv(26) @ 9350.0ns: uvm_test_top.env.i_agt[1].drv [PACKET_GET] port_id 1 get a packet
+UVM_INFO @ 9350.0ns: uvm_test_top.env.sb.comparator[5] [Comparator Match] 
+UVM_INFO @ 9350.0ns: uvm_test_top.env.sb.comparator[14] [Comparator Match] 
+UVM_INFO packet_sequence.sv(52) @ 9350.0ns: uvm_test_top.env.i_agt[1].seqr@@packet_sequence [PACKET_SEND] port_id 1 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 9450.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET11] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 9450.0ns: uvm_test_top.env.o_agt[11].o_mon [MONITOR_OUTPUT_SEND] port_id 11 send a packet
+UVM_INFO @ 9450.0ns: uvm_test_top.env.sb.comparator[11] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 9650.0ns: uvm_test_top.env.sb [SB_INPUT_GET4] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 9650.0ns: uvm_test_top.env.i_agt[4].i_mon [MONITOR_INPUT_SEND] port_id 4 send a packet
+UVM_INFO driver.sv(26) @ 9650.0ns: uvm_test_top.env.i_agt[4].drv [PACKET_GET] port_id 4 get a packet
+UVM_INFO packet_sequence.sv(52) @ 9650.0ns: uvm_test_top.env.i_agt[4].seqr@@packet_sequence [PACKET_SEND] port_id 4 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 9750.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET4] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 9750.0ns: uvm_test_top.env.o_agt[4].o_mon [MONITOR_OUTPUT_SEND] port_id 4 send a packet
+UVM_INFO @ 9750.0ns: uvm_test_top.env.sb.comparator[4] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 10250.0ns: uvm_test_top.env.sb [SB_INPUT_GET7] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 10250.0ns: uvm_test_top.env.i_agt[2].i_mon [MONITOR_INPUT_SEND] port_id 2 send a packet
+UVM_INFO scoreboard.sv(29) @ 10250.0ns: uvm_test_top.env.sb [SB_INPUT_GET8] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 10250.0ns: uvm_test_top.env.i_agt[6].i_mon [MONITOR_INPUT_SEND] port_id 6 send a packet
+UVM_INFO driver.sv(26) @ 10250.0ns: uvm_test_top.env.i_agt[6].drv [PACKET_GET] port_id 6 get a packet
+UVM_INFO driver.sv(26) @ 10250.0ns: uvm_test_top.env.i_agt[2].drv [PACKET_GET] port_id 2 get a packet
+UVM_INFO packet_sequence.sv(52) @ 10250.0ns: uvm_test_top.env.i_agt[6].seqr@@packet_sequence [PACKET_SEND] port_id 6 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 10250.0ns: uvm_test_top.env.i_agt[2].seqr@@packet_sequence [PACKET_SEND] port_id 2 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 10350.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET7] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 10350.0ns: uvm_test_top.env.o_agt[7].o_mon [MONITOR_OUTPUT_SEND] port_id 7 send a packet
+UVM_INFO scoreboard.sv(34) @ 10350.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET8] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 10350.0ns: uvm_test_top.env.o_agt[8].o_mon [MONITOR_OUTPUT_SEND] port_id 8 send a packet
+UVM_INFO @ 10350.0ns: uvm_test_top.env.sb.comparator[7] [Comparator Match] 
+UVM_INFO @ 10350.0ns: uvm_test_top.env.sb.comparator[8] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 10450.0ns: uvm_test_top.env.sb [SB_INPUT_GET5] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 10450.0ns: uvm_test_top.env.i_agt[0].i_mon [MONITOR_INPUT_SEND] port_id 0 send a packet
+UVM_INFO driver.sv(26) @ 10450.0ns: uvm_test_top.env.i_agt[0].drv [PACKET_GET] port_id 0 get a packet
+UVM_INFO packet_sequence.sv(52) @ 10450.0ns: uvm_test_top.env.i_agt[0].seqr@@packet_sequence [PACKET_SEND] port_id 0 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 10550.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET5] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 10550.0ns: uvm_test_top.env.o_agt[5].o_mon [MONITOR_OUTPUT_SEND] port_id 5 send a packet
+UVM_INFO @ 10550.0ns: uvm_test_top.env.sb.comparator[5] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 10650.0ns: uvm_test_top.env.sb [SB_INPUT_GET10] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 10650.0ns: uvm_test_top.env.i_agt[3].i_mon [MONITOR_INPUT_SEND] port_id 3 send a packet
+UVM_INFO scoreboard.sv(29) @ 10650.0ns: uvm_test_top.env.sb [SB_INPUT_GET0] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 10650.0ns: uvm_test_top.env.i_agt[15].i_mon [MONITOR_INPUT_SEND] port_id 15 send a packet
+UVM_INFO driver.sv(26) @ 10650.0ns: uvm_test_top.env.i_agt[15].drv [PACKET_GET] port_id 15 get a packet
+UVM_INFO driver.sv(26) @ 10650.0ns: uvm_test_top.env.i_agt[3].drv [PACKET_GET] port_id 3 get a packet
+UVM_INFO packet_sequence.sv(52) @ 10650.0ns: uvm_test_top.env.i_agt[15].seqr@@packet_sequence [PACKET_SEND] port_id 15 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 10650.0ns: uvm_test_top.env.i_agt[3].seqr@@packet_sequence [PACKET_SEND] port_id 3 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 10750.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET10] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 10750.0ns: uvm_test_top.env.o_agt[10].o_mon [MONITOR_OUTPUT_SEND] port_id 10 send a packet
+UVM_INFO scoreboard.sv(34) @ 10750.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET0] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 10750.0ns: uvm_test_top.env.o_agt[0].o_mon [MONITOR_OUTPUT_SEND] port_id 0 send a packet
+UVM_INFO @ 10750.0ns: uvm_test_top.env.sb.comparator[10] [Comparator Match] 
+UVM_INFO @ 10750.0ns: uvm_test_top.env.sb.comparator[0] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 10950.0ns: uvm_test_top.env.sb [SB_INPUT_GET15] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 10950.0ns: uvm_test_top.env.i_agt[13].i_mon [MONITOR_INPUT_SEND] port_id 13 send a packet
+UVM_INFO scoreboard.sv(29) @ 10950.0ns: uvm_test_top.env.sb [SB_INPUT_GET2] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 10950.0ns: uvm_test_top.env.i_agt[12].i_mon [MONITOR_INPUT_SEND] port_id 12 send a packet
+UVM_INFO driver.sv(26) @ 10950.0ns: uvm_test_top.env.i_agt[13].drv [PACKET_GET] port_id 13 get a packet
+UVM_INFO driver.sv(26) @ 10950.0ns: uvm_test_top.env.i_agt[12].drv [PACKET_GET] port_id 12 get a packet
+UVM_INFO packet_sequence.sv(52) @ 10950.0ns: uvm_test_top.env.i_agt[13].seqr@@packet_sequence [PACKET_SEND] port_id 13 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 10950.0ns: uvm_test_top.env.i_agt[12].seqr@@packet_sequence [PACKET_SEND] port_id 12 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 11050.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET2] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 11050.0ns: uvm_test_top.env.o_agt[2].o_mon [MONITOR_OUTPUT_SEND] port_id 2 send a packet
+UVM_INFO scoreboard.sv(34) @ 11050.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET15] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 11050.0ns: uvm_test_top.env.o_agt[15].o_mon [MONITOR_OUTPUT_SEND] port_id 15 send a packet
+UVM_INFO scoreboard.sv(29) @ 11050.0ns: uvm_test_top.env.sb [SB_INPUT_GET9] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 11050.0ns: uvm_test_top.env.i_agt[11].i_mon [MONITOR_INPUT_SEND] port_id 11 send a packet
+UVM_INFO driver.sv(26) @ 11050.0ns: uvm_test_top.env.i_agt[11].drv [PACKET_GET] port_id 11 get a packet
+UVM_INFO @ 11050.0ns: uvm_test_top.env.sb.comparator[2] [Comparator Match] 
+UVM_INFO @ 11050.0ns: uvm_test_top.env.sb.comparator[15] [Comparator Match] 
+UVM_INFO packet_sequence.sv(52) @ 11050.0ns: uvm_test_top.env.i_agt[11].seqr@@packet_sequence [PACKET_SEND] port_id 11 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 11150.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET9] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 11150.0ns: uvm_test_top.env.o_agt[9].o_mon [MONITOR_OUTPUT_SEND] port_id 9 send a packet
+UVM_INFO @ 11150.0ns: uvm_test_top.env.sb.comparator[9] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 11350.0ns: uvm_test_top.env.sb [SB_INPUT_GET1] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 11350.0ns: uvm_test_top.env.i_agt[4].i_mon [MONITOR_INPUT_SEND] port_id 4 send a packet
+UVM_INFO driver.sv(26) @ 11350.0ns: uvm_test_top.env.i_agt[4].drv [PACKET_GET] port_id 4 get a packet
+UVM_INFO packet_sequence.sv(52) @ 11350.0ns: uvm_test_top.env.i_agt[4].seqr@@packet_sequence [PACKET_SEND] port_id 4 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 11450.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET1] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 11450.0ns: uvm_test_top.env.o_agt[1].o_mon [MONITOR_OUTPUT_SEND] port_id 1 send a packet
+UVM_INFO @ 11450.0ns: uvm_test_top.env.sb.comparator[1] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 11950.0ns: uvm_test_top.env.sb [SB_INPUT_GET13] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 11950.0ns: uvm_test_top.env.i_agt[6].i_mon [MONITOR_INPUT_SEND] port_id 6 send a packet
+UVM_INFO driver.sv(26) @ 11950.0ns: uvm_test_top.env.i_agt[6].drv [PACKET_GET] port_id 6 get a packet
+UVM_INFO packet_sequence.sv(52) @ 11950.0ns: uvm_test_top.env.i_agt[6].seqr@@packet_sequence [PACKET_SEND] port_id 6 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 12050.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET13] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 12050.0ns: uvm_test_top.env.o_agt[13].o_mon [MONITOR_OUTPUT_SEND] port_id 13 send a packet
+UVM_INFO @ 12050.0ns: uvm_test_top.env.sb.comparator[13] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 12250.0ns: uvm_test_top.env.sb [SB_INPUT_GET8] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 12250.0ns: uvm_test_top.env.i_agt[8].i_mon [MONITOR_INPUT_SEND] port_id 8 send a packet
+UVM_INFO driver.sv(26) @ 12250.0ns: uvm_test_top.env.i_agt[8].drv [PACKET_GET] port_id 8 get a packet
+UVM_INFO packet_sequence.sv(52) @ 12250.0ns: uvm_test_top.env.i_agt[8].seqr@@packet_sequence [PACKET_SEND] port_id 8 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 12350.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET8] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 12350.0ns: uvm_test_top.env.o_agt[8].o_mon [MONITOR_OUTPUT_SEND] port_id 8 send a packet
+UVM_INFO @ 12350.0ns: uvm_test_top.env.sb.comparator[8] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 12750.0ns: uvm_test_top.env.sb [SB_INPUT_GET7] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 12750.0ns: uvm_test_top.env.i_agt[2].i_mon [MONITOR_INPUT_SEND] port_id 2 send a packet
+UVM_INFO driver.sv(26) @ 12750.0ns: uvm_test_top.env.i_agt[2].drv [PACKET_GET] port_id 2 get a packet
+UVM_INFO packet_sequence.sv(52) @ 12750.0ns: uvm_test_top.env.i_agt[2].seqr@@packet_sequence [PACKET_SEND] port_id 2 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 12850.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET7] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 12850.0ns: uvm_test_top.env.o_agt[7].o_mon [MONITOR_OUTPUT_SEND] port_id 7 send a packet
+UVM_INFO @ 12850.0ns: uvm_test_top.env.sb.comparator[7] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 12950.0ns: uvm_test_top.env.sb [SB_INPUT_GET15] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 12950.0ns: uvm_test_top.env.i_agt[1].i_mon [MONITOR_INPUT_SEND] port_id 1 send a packet
+UVM_INFO scoreboard.sv(29) @ 12950.0ns: uvm_test_top.env.sb [SB_INPUT_GET4] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 12950.0ns: uvm_test_top.env.i_agt[0].i_mon [MONITOR_INPUT_SEND] port_id 0 send a packet
+UVM_INFO driver.sv(26) @ 12950.0ns: uvm_test_top.env.i_agt[1].drv [PACKET_GET] port_id 1 get a packet
+UVM_INFO driver.sv(26) @ 12950.0ns: uvm_test_top.env.i_agt[0].drv [PACKET_GET] port_id 0 get a packet
+UVM_INFO packet_sequence.sv(52) @ 12950.0ns: uvm_test_top.env.i_agt[1].seqr@@packet_sequence [PACKET_SEND] port_id 1 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 12950.0ns: uvm_test_top.env.i_agt[0].seqr@@packet_sequence [PACKET_SEND] port_id 0 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 13050.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET4] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 13050.0ns: uvm_test_top.env.o_agt[4].o_mon [MONITOR_OUTPUT_SEND] port_id 4 send a packet
+UVM_INFO scoreboard.sv(34) @ 13050.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET15] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 13050.0ns: uvm_test_top.env.o_agt[15].o_mon [MONITOR_OUTPUT_SEND] port_id 15 send a packet
+UVM_INFO @ 13050.0ns: uvm_test_top.env.sb.comparator[4] [Comparator Match] 
+UVM_INFO @ 13050.0ns: uvm_test_top.env.sb.comparator[15] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 13250.0ns: uvm_test_top.env.sb [SB_INPUT_GET5] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 13250.0ns: uvm_test_top.env.i_agt[9].i_mon [MONITOR_INPUT_SEND] port_id 9 send a packet
+UVM_INFO driver.sv(26) @ 13250.0ns: uvm_test_top.env.i_agt[9].drv [PACKET_GET] port_id 9 get a packet
+UVM_INFO packet_sequence.sv(52) @ 13250.0ns: uvm_test_top.env.i_agt[9].seqr@@packet_sequence [PACKET_SEND] port_id 9 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 13350.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET5] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 13350.0ns: uvm_test_top.env.o_agt[5].o_mon [MONITOR_OUTPUT_SEND] port_id 5 send a packet
+UVM_INFO @ 13350.0ns: uvm_test_top.env.sb.comparator[5] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 13450.0ns: uvm_test_top.env.sb [SB_INPUT_GET0] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 13450.0ns: uvm_test_top.env.i_agt[7].i_mon [MONITOR_INPUT_SEND] port_id 7 send a packet
+UVM_INFO driver.sv(26) @ 13450.0ns: uvm_test_top.env.i_agt[7].drv [PACKET_GET] port_id 7 get a packet
+UVM_INFO packet_sequence.sv(52) @ 13450.0ns: uvm_test_top.env.i_agt[7].seqr@@packet_sequence [PACKET_SEND] port_id 7 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 13550.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET0] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 13550.0ns: uvm_test_top.env.o_agt[0].o_mon [MONITOR_OUTPUT_SEND] port_id 0 send a packet
+UVM_INFO @ 13550.0ns: uvm_test_top.env.sb.comparator[0] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 14150.0ns: uvm_test_top.env.sb [SB_INPUT_GET15] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 14150.0ns: uvm_test_top.env.i_agt[5].i_mon [MONITOR_INPUT_SEND] port_id 5 send a packet
+UVM_INFO driver.sv(26) @ 14150.0ns: uvm_test_top.env.i_agt[5].drv [PACKET_GET] port_id 5 get a packet
+UVM_INFO packet_sequence.sv(52) @ 14150.0ns: uvm_test_top.env.i_agt[5].seqr@@packet_sequence [PACKET_SEND] port_id 5 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 14250.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET15] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 14250.0ns: uvm_test_top.env.o_agt[15].o_mon [MONITOR_OUTPUT_SEND] port_id 15 send a packet
+UVM_INFO scoreboard.sv(29) @ 14250.0ns: uvm_test_top.env.sb [SB_INPUT_GET2] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 14250.0ns: uvm_test_top.env.i_agt[12].i_mon [MONITOR_INPUT_SEND] port_id 12 send a packet
+UVM_INFO driver.sv(26) @ 14250.0ns: uvm_test_top.env.i_agt[12].drv [PACKET_GET] port_id 12 get a packet
+UVM_INFO @ 14250.0ns: uvm_test_top.env.sb.comparator[15] [Comparator Match] 
+UVM_INFO packet_sequence.sv(52) @ 14250.0ns: uvm_test_top.env.i_agt[12].seqr@@packet_sequence [PACKET_SEND] port_id 12 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 14350.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET2] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 14350.0ns: uvm_test_top.env.o_agt[2].o_mon [MONITOR_OUTPUT_SEND] port_id 2 send a packet
+UVM_INFO @ 14350.0ns: uvm_test_top.env.sb.comparator[2] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 14650.0ns: uvm_test_top.env.sb [SB_INPUT_GET1] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 14650.0ns: uvm_test_top.env.i_agt[1].i_mon [MONITOR_INPUT_SEND] port_id 1 send a packet
+UVM_INFO scoreboard.sv(29) @ 14650.0ns: uvm_test_top.env.sb [SB_INPUT_GET12] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 14650.0ns: uvm_test_top.env.i_agt[0].i_mon [MONITOR_INPUT_SEND] port_id 0 send a packet
+UVM_INFO scoreboard.sv(29) @ 14650.0ns: uvm_test_top.env.sb [SB_INPUT_GET10] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 14650.0ns: uvm_test_top.env.i_agt[4].i_mon [MONITOR_INPUT_SEND] port_id 4 send a packet
+UVM_INFO driver.sv(26) @ 14650.0ns: uvm_test_top.env.i_agt[4].drv [PACKET_GET] port_id 4 get a packet
+UVM_INFO driver.sv(26) @ 14650.0ns: uvm_test_top.env.i_agt[0].drv [PACKET_GET] port_id 0 get a packet
+UVM_INFO driver.sv(26) @ 14650.0ns: uvm_test_top.env.i_agt[1].drv [PACKET_GET] port_id 1 get a packet
+UVM_INFO packet_sequence.sv(52) @ 14650.0ns: uvm_test_top.env.i_agt[4].seqr@@packet_sequence [PACKET_SEND] port_id 4 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 14650.0ns: uvm_test_top.env.i_agt[0].seqr@@packet_sequence [PACKET_SEND] port_id 0 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 14650.0ns: uvm_test_top.env.i_agt[1].seqr@@packet_sequence [PACKET_SEND] port_id 1 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 14750.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET12] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 14750.0ns: uvm_test_top.env.o_agt[12].o_mon [MONITOR_OUTPUT_SEND] port_id 12 send a packet
+UVM_INFO scoreboard.sv(34) @ 14750.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET1] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 14750.0ns: uvm_test_top.env.o_agt[1].o_mon [MONITOR_OUTPUT_SEND] port_id 1 send a packet
+UVM_INFO scoreboard.sv(29) @ 14750.0ns: uvm_test_top.env.sb [SB_INPUT_GET7] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 14750.0ns: uvm_test_top.env.i_agt[3].i_mon [MONITOR_INPUT_SEND] port_id 3 send a packet
+UVM_INFO scoreboard.sv(34) @ 14750.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET10] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 14750.0ns: uvm_test_top.env.o_agt[10].o_mon [MONITOR_OUTPUT_SEND] port_id 10 send a packet
+UVM_INFO driver.sv(26) @ 14750.0ns: uvm_test_top.env.i_agt[3].drv [PACKET_GET] port_id 3 get a packet
+UVM_INFO @ 14750.0ns: uvm_test_top.env.sb.comparator[12] [Comparator Match] 
+UVM_INFO @ 14750.0ns: uvm_test_top.env.sb.comparator[1] [Comparator Match] 
+UVM_INFO @ 14750.0ns: uvm_test_top.env.sb.comparator[10] [Comparator Match] 
+UVM_INFO packet_sequence.sv(52) @ 14750.0ns: uvm_test_top.env.i_agt[3].seqr@@packet_sequence [PACKET_SEND] port_id 3 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 14850.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET7] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 14850.0ns: uvm_test_top.env.o_agt[7].o_mon [MONITOR_OUTPUT_SEND] port_id 7 send a packet
+UVM_INFO @ 14850.0ns: uvm_test_top.env.sb.comparator[7] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 15050.0ns: uvm_test_top.env.sb [SB_INPUT_GET8] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 15050.0ns: uvm_test_top.env.i_agt[10].i_mon [MONITOR_INPUT_SEND] port_id 10 send a packet
+UVM_INFO driver.sv(26) @ 15050.0ns: uvm_test_top.env.i_agt[10].drv [PACKET_GET] port_id 10 get a packet
+UVM_INFO packet_sequence.sv(52) @ 15050.0ns: uvm_test_top.env.i_agt[10].seqr@@packet_sequence [PACKET_SEND] port_id 10 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 15150.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET8] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 15150.0ns: uvm_test_top.env.o_agt[8].o_mon [MONITOR_OUTPUT_SEND] port_id 8 send a packet
+UVM_INFO @ 15150.0ns: uvm_test_top.env.sb.comparator[8] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 15250.0ns: uvm_test_top.env.sb [SB_INPUT_GET5] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 15250.0ns: uvm_test_top.env.i_agt[11].i_mon [MONITOR_INPUT_SEND] port_id 11 send a packet
+UVM_INFO driver.sv(26) @ 15250.0ns: uvm_test_top.env.i_agt[11].drv [PACKET_GET] port_id 11 get a packet
+UVM_INFO packet_sequence.sv(52) @ 15250.0ns: uvm_test_top.env.i_agt[11].seqr@@packet_sequence [PACKET_SEND] port_id 11 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 15350.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET5] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 15350.0ns: uvm_test_top.env.o_agt[5].o_mon [MONITOR_OUTPUT_SEND] port_id 5 send a packet
+UVM_INFO @ 15350.0ns: uvm_test_top.env.sb.comparator[5] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 15450.0ns: uvm_test_top.env.sb [SB_INPUT_GET2] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 15450.0ns: uvm_test_top.env.i_agt[6].i_mon [MONITOR_INPUT_SEND] port_id 6 send a packet
+UVM_INFO driver.sv(26) @ 15450.0ns: uvm_test_top.env.i_agt[6].drv [PACKET_GET] port_id 6 get a packet
+UVM_INFO packet_sequence.sv(52) @ 15450.0ns: uvm_test_top.env.i_agt[6].seqr@@packet_sequence [PACKET_SEND] port_id 6 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 15550.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET2] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 15550.0ns: uvm_test_top.env.o_agt[2].o_mon [MONITOR_OUTPUT_SEND] port_id 2 send a packet
+UVM_INFO @ 15550.0ns: uvm_test_top.env.sb.comparator[2] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 15950.0ns: uvm_test_top.env.sb [SB_INPUT_GET7] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 15950.0ns: uvm_test_top.env.i_agt[8].i_mon [MONITOR_INPUT_SEND] port_id 8 send a packet
+UVM_INFO driver.sv(26) @ 15950.0ns: uvm_test_top.env.i_agt[8].drv [PACKET_GET] port_id 8 get a packet
+UVM_INFO packet_sequence.sv(52) @ 15950.0ns: uvm_test_top.env.i_agt[8].seqr@@packet_sequence [PACKET_SEND] port_id 8 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 16050.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET7] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 16050.0ns: uvm_test_top.env.o_agt[7].o_mon [MONITOR_OUTPUT_SEND] port_id 7 send a packet
+UVM_INFO scoreboard.sv(29) @ 16050.0ns: uvm_test_top.env.sb [SB_INPUT_GET11] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 16050.0ns: uvm_test_top.env.i_agt[2].i_mon [MONITOR_INPUT_SEND] port_id 2 send a packet
+UVM_INFO driver.sv(26) @ 16050.0ns: uvm_test_top.env.i_agt[2].drv [PACKET_GET] port_id 2 get a packet
+UVM_INFO @ 16050.0ns: uvm_test_top.env.sb.comparator[7] [Comparator Match] 
+UVM_INFO packet_sequence.sv(52) @ 16050.0ns: uvm_test_top.env.i_agt[2].seqr@@packet_sequence [PACKET_SEND] port_id 2 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 16150.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET11] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 16150.0ns: uvm_test_top.env.o_agt[11].o_mon [MONITOR_OUTPUT_SEND] port_id 11 send a packet
+UVM_INFO @ 16150.0ns: uvm_test_top.env.sb.comparator[11] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 16250.0ns: uvm_test_top.env.sb [SB_INPUT_GET0] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 16250.0ns: uvm_test_top.env.i_agt[13].i_mon [MONITOR_INPUT_SEND] port_id 13 send a packet
+UVM_INFO driver.sv(26) @ 16250.0ns: uvm_test_top.env.i_agt[13].drv [PACKET_GET] port_id 13 get a packet
+UVM_INFO packet_sequence.sv(52) @ 16250.0ns: uvm_test_top.env.i_agt[13].seqr@@packet_sequence [PACKET_SEND] port_id 13 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 16350.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET0] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 16350.0ns: uvm_test_top.env.o_agt[0].o_mon [MONITOR_OUTPUT_SEND] port_id 0 send a packet
+UVM_INFO @ 16350.0ns: uvm_test_top.env.sb.comparator[0] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 16450.0ns: uvm_test_top.env.sb [SB_INPUT_GET5] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 16450.0ns: uvm_test_top.env.i_agt[5].i_mon [MONITOR_INPUT_SEND] port_id 5 send a packet
+UVM_INFO driver.sv(26) @ 16450.0ns: uvm_test_top.env.i_agt[5].drv [PACKET_GET] port_id 5 get a packet
+UVM_INFO packet_sequence.sv(52) @ 16450.0ns: uvm_test_top.env.i_agt[5].seqr@@packet_sequence [PACKET_SEND] port_id 5 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 16550.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET5] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 16550.0ns: uvm_test_top.env.o_agt[5].o_mon [MONITOR_OUTPUT_SEND] port_id 5 send a packet
+UVM_INFO scoreboard.sv(29) @ 16550.0ns: uvm_test_top.env.sb [SB_INPUT_GET4] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 16550.0ns: uvm_test_top.env.i_agt[9].i_mon [MONITOR_INPUT_SEND] port_id 9 send a packet
+UVM_INFO driver.sv(26) @ 16550.0ns: uvm_test_top.env.i_agt[9].drv [PACKET_GET] port_id 9 get a packet
+UVM_INFO @ 16550.0ns: uvm_test_top.env.sb.comparator[5] [Comparator Match] 
+UVM_INFO packet_sequence.sv(52) @ 16550.0ns: uvm_test_top.env.i_agt[9].seqr@@packet_sequence [PACKET_SEND] port_id 9 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 16650.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET4] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 16650.0ns: uvm_test_top.env.o_agt[4].o_mon [MONITOR_OUTPUT_SEND] port_id 4 send a packet
+UVM_INFO @ 16650.0ns: uvm_test_top.env.sb.comparator[4] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 16950.0ns: uvm_test_top.env.sb [SB_INPUT_GET15] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 16950.0ns: uvm_test_top.env.i_agt[7].i_mon [MONITOR_INPUT_SEND] port_id 7 send a packet
+UVM_INFO driver.sv(26) @ 16950.0ns: uvm_test_top.env.i_agt[7].drv [PACKET_GET] port_id 7 get a packet
+UVM_INFO packet_sequence.sv(52) @ 16950.0ns: uvm_test_top.env.i_agt[7].seqr@@packet_sequence [PACKET_SEND] port_id 7 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(29) @ 17050.0ns: uvm_test_top.env.sb [SB_INPUT_GET8] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 17050.0ns: uvm_test_top.env.i_agt[14].i_mon [MONITOR_INPUT_SEND] port_id 14 send a packet
+UVM_INFO scoreboard.sv(34) @ 17050.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET15] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 17050.0ns: uvm_test_top.env.o_agt[15].o_mon [MONITOR_OUTPUT_SEND] port_id 15 send a packet
+UVM_INFO driver.sv(26) @ 17050.0ns: uvm_test_top.env.i_agt[14].drv [PACKET_GET] port_id 14 get a packet
+UVM_INFO @ 17050.0ns: uvm_test_top.env.sb.comparator[15] [Comparator Match] 
+UVM_INFO packet_sequence.sv(52) @ 17050.0ns: uvm_test_top.env.i_agt[14].seqr@@packet_sequence [PACKET_SEND] port_id 14 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 17150.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET8] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 17150.0ns: uvm_test_top.env.o_agt[8].o_mon [MONITOR_OUTPUT_SEND] port_id 8 send a packet
+UVM_INFO @ 17150.0ns: uvm_test_top.env.sb.comparator[8] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 17550.0ns: uvm_test_top.env.sb [SB_INPUT_GET2] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 17550.0ns: uvm_test_top.env.i_agt[10].i_mon [MONITOR_INPUT_SEND] port_id 10 send a packet
+UVM_INFO driver.sv(26) @ 17550.0ns: uvm_test_top.env.i_agt[10].drv [PACKET_GET] port_id 10 get a packet
+UVM_INFO packet_sequence.sv(52) @ 17550.0ns: uvm_test_top.env.i_agt[10].seqr@@packet_sequence [PACKET_SEND] port_id 10 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 17650.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET2] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 17650.0ns: uvm_test_top.env.o_agt[2].o_mon [MONITOR_OUTPUT_SEND] port_id 2 send a packet
+UVM_INFO @ 17650.0ns: uvm_test_top.env.sb.comparator[2] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 18050.0ns: uvm_test_top.env.sb [SB_INPUT_GET11] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 18050.0ns: uvm_test_top.env.i_agt[1].i_mon [MONITOR_INPUT_SEND] port_id 1 send a packet
+UVM_INFO driver.sv(26) @ 18050.0ns: uvm_test_top.env.i_agt[1].drv [PACKET_GET] port_id 1 get a packet
+UVM_INFO packet_sequence.sv(52) @ 18050.0ns: uvm_test_top.env.i_agt[1].seqr@@packet_sequence [PACKET_SEND] port_id 1 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 18150.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET11] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 18150.0ns: uvm_test_top.env.o_agt[11].o_mon [MONITOR_OUTPUT_SEND] port_id 11 send a packet
+UVM_INFO @ 18150.0ns: uvm_test_top.env.sb.comparator[11] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 18250.0ns: uvm_test_top.env.sb [SB_INPUT_GET6] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 18250.0ns: uvm_test_top.env.i_agt[9].i_mon [MONITOR_INPUT_SEND] port_id 9 send a packet
+UVM_INFO driver.sv(26) @ 18250.0ns: uvm_test_top.env.i_agt[9].drv [PACKET_GET] port_id 9 get a packet
+UVM_INFO packet_sequence.sv(52) @ 18250.0ns: uvm_test_top.env.i_agt[9].seqr@@packet_sequence [PACKET_SEND] port_id 9 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 18350.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET6] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 18350.0ns: uvm_test_top.env.o_agt[6].o_mon [MONITOR_OUTPUT_SEND] port_id 6 send a packet
+UVM_INFO @ 18350.0ns: uvm_test_top.env.sb.comparator[6] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 18450.0ns: uvm_test_top.env.sb [SB_INPUT_GET5] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 18450.0ns: uvm_test_top.env.i_agt[6].i_mon [MONITOR_INPUT_SEND] port_id 6 send a packet
+UVM_INFO driver.sv(26) @ 18450.0ns: uvm_test_top.env.i_agt[6].drv [PACKET_GET] port_id 6 get a packet
+UVM_INFO packet_sequence.sv(52) @ 18450.0ns: uvm_test_top.env.i_agt[6].seqr@@packet_sequence [PACKET_SEND] port_id 6 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(29) @ 18550.0ns: uvm_test_top.env.sb [SB_INPUT_GET4] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 18550.0ns: uvm_test_top.env.i_agt[12].i_mon [MONITOR_INPUT_SEND] port_id 12 send a packet
+UVM_INFO scoreboard.sv(34) @ 18550.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET5] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 18550.0ns: uvm_test_top.env.o_agt[5].o_mon [MONITOR_OUTPUT_SEND] port_id 5 send a packet
+UVM_INFO driver.sv(26) @ 18550.0ns: uvm_test_top.env.i_agt[12].drv [PACKET_GET] port_id 12 get a packet
+UVM_INFO @ 18550.0ns: uvm_test_top.env.sb.comparator[5] [Comparator Match] 
+UVM_INFO packet_sequence.sv(52) @ 18550.0ns: uvm_test_top.env.i_agt[12].seqr@@packet_sequence [PACKET_SEND] port_id 12 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 18650.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET4] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 18650.0ns: uvm_test_top.env.o_agt[4].o_mon [MONITOR_OUTPUT_SEND] port_id 4 send a packet
+UVM_INFO @ 18650.0ns: uvm_test_top.env.sb.comparator[4] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 18750.0ns: uvm_test_top.env.sb [SB_INPUT_GET7] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 18750.0ns: uvm_test_top.env.i_agt[15].i_mon [MONITOR_INPUT_SEND] port_id 15 send a packet
+UVM_INFO scoreboard.sv(29) @ 18750.0ns: uvm_test_top.env.sb [SB_INPUT_GET9] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 18750.0ns: uvm_test_top.env.i_agt[13].i_mon [MONITOR_INPUT_SEND] port_id 13 send a packet
+UVM_INFO driver.sv(26) @ 18750.0ns: uvm_test_top.env.i_agt[15].drv [PACKET_GET] port_id 15 get a packet
+UVM_INFO driver.sv(26) @ 18750.0ns: uvm_test_top.env.i_agt[13].drv [PACKET_GET] port_id 13 get a packet
+UVM_INFO packet_sequence.sv(52) @ 18750.0ns: uvm_test_top.env.i_agt[15].seqr@@packet_sequence [PACKET_SEND] port_id 15 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 18750.0ns: uvm_test_top.env.i_agt[13].seqr@@packet_sequence [PACKET_SEND] port_id 13 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 18850.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET9] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 18850.0ns: uvm_test_top.env.o_agt[9].o_mon [MONITOR_OUTPUT_SEND] port_id 9 send a packet
+UVM_INFO scoreboard.sv(34) @ 18850.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET7] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 18850.0ns: uvm_test_top.env.o_agt[7].o_mon [MONITOR_OUTPUT_SEND] port_id 7 send a packet
+UVM_INFO @ 18850.0ns: uvm_test_top.env.sb.comparator[9] [Comparator Match] 
+UVM_INFO @ 18850.0ns: uvm_test_top.env.sb.comparator[7] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 19350.0ns: uvm_test_top.env.sb [SB_INPUT_GET1] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 19350.0ns: uvm_test_top.env.i_agt[2].i_mon [MONITOR_INPUT_SEND] port_id 2 send a packet
+UVM_INFO driver.sv(26) @ 19350.0ns: uvm_test_top.env.i_agt[2].drv [PACKET_GET] port_id 2 get a packet
+UVM_INFO packet_sequence.sv(52) @ 19350.0ns: uvm_test_top.env.i_agt[2].seqr@@packet_sequence [PACKET_SEND] port_id 2 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 19450.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET1] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 19450.0ns: uvm_test_top.env.o_agt[1].o_mon [MONITOR_OUTPUT_SEND] port_id 1 send a packet
+UVM_INFO @ 19450.0ns: uvm_test_top.env.sb.comparator[1] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 19550.0ns: uvm_test_top.env.sb [SB_INPUT_GET2] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 19550.0ns: uvm_test_top.env.i_agt[14].i_mon [MONITOR_INPUT_SEND] port_id 14 send a packet
+UVM_INFO driver.sv(26) @ 19550.0ns: uvm_test_top.env.i_agt[14].drv [PACKET_GET] port_id 14 get a packet
+UVM_INFO packet_sequence.sv(52) @ 19550.0ns: uvm_test_top.env.i_agt[14].seqr@@packet_sequence [PACKET_SEND] port_id 14 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 19650.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET2] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 19650.0ns: uvm_test_top.env.o_agt[2].o_mon [MONITOR_OUTPUT_SEND] port_id 2 send a packet
+UVM_INFO @ 19650.0ns: uvm_test_top.env.sb.comparator[2] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 19750.0ns: uvm_test_top.env.sb [SB_INPUT_GET15] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 19750.0ns: uvm_test_top.env.i_agt[11].i_mon [MONITOR_INPUT_SEND] port_id 11 send a packet
+UVM_INFO driver.sv(26) @ 19750.0ns: uvm_test_top.env.i_agt[11].drv [PACKET_GET] port_id 11 get a packet
+UVM_INFO packet_sequence.sv(52) @ 19750.0ns: uvm_test_top.env.i_agt[11].seqr@@packet_sequence [PACKET_SEND] port_id 11 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 19850.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET15] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 19850.0ns: uvm_test_top.env.o_agt[15].o_mon [MONITOR_OUTPUT_SEND] port_id 15 send a packet
+UVM_INFO @ 19850.0ns: uvm_test_top.env.sb.comparator[15] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 20450.0ns: uvm_test_top.env.sb [SB_INPUT_GET12] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 20450.0ns: uvm_test_top.env.i_agt[15].i_mon [MONITOR_INPUT_SEND] port_id 15 send a packet
+UVM_INFO driver.sv(26) @ 20450.0ns: uvm_test_top.env.i_agt[15].drv [PACKET_GET] port_id 15 get a packet
+UVM_INFO packet_sequence.sv(52) @ 20450.0ns: uvm_test_top.env.i_agt[15].seqr@@packet_sequence [PACKET_SEND] port_id 15 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 20550.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET12] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 20550.0ns: uvm_test_top.env.o_agt[12].o_mon [MONITOR_OUTPUT_SEND] port_id 12 send a packet
+UVM_INFO @ 20550.0ns: uvm_test_top.env.sb.comparator[12] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 20750.0ns: uvm_test_top.env.sb [SB_INPUT_GET7] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 20750.0ns: uvm_test_top.env.i_agt[3].i_mon [MONITOR_INPUT_SEND] port_id 3 send a packet
+UVM_INFO scoreboard.sv(29) @ 20750.0ns: uvm_test_top.env.sb [SB_INPUT_GET9] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 20750.0ns: uvm_test_top.env.i_agt[10].i_mon [MONITOR_INPUT_SEND] port_id 10 send a packet
+UVM_INFO scoreboard.sv(29) @ 20750.0ns: uvm_test_top.env.sb [SB_INPUT_GET14] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 20750.0ns: uvm_test_top.env.i_agt[9].i_mon [MONITOR_INPUT_SEND] port_id 9 send a packet
+UVM_INFO driver.sv(26) @ 20750.0ns: uvm_test_top.env.i_agt[3].drv [PACKET_GET] port_id 3 get a packet
+UVM_INFO driver.sv(26) @ 20750.0ns: uvm_test_top.env.i_agt[10].drv [PACKET_GET] port_id 10 get a packet
+UVM_INFO driver.sv(26) @ 20750.0ns: uvm_test_top.env.i_agt[9].drv [PACKET_GET] port_id 9 get a packet
+UVM_INFO packet_sequence.sv(52) @ 20750.0ns: uvm_test_top.env.i_agt[3].seqr@@packet_sequence [PACKET_SEND] port_id 3 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 20750.0ns: uvm_test_top.env.i_agt[10].seqr@@packet_sequence [PACKET_SEND] port_id 10 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 20750.0ns: uvm_test_top.env.i_agt[9].seqr@@packet_sequence [PACKET_SEND] port_id 9 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 20850.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET14] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 20850.0ns: uvm_test_top.env.o_agt[14].o_mon [MONITOR_OUTPUT_SEND] port_id 14 send a packet
+UVM_INFO scoreboard.sv(34) @ 20850.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET9] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 20850.0ns: uvm_test_top.env.o_agt[9].o_mon [MONITOR_OUTPUT_SEND] port_id 9 send a packet
+UVM_INFO scoreboard.sv(34) @ 20850.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET7] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 20850.0ns: uvm_test_top.env.o_agt[7].o_mon [MONITOR_OUTPUT_SEND] port_id 7 send a packet
+UVM_INFO @ 20850.0ns: uvm_test_top.env.sb.comparator[14] [Comparator Match] 
+UVM_INFO @ 20850.0ns: uvm_test_top.env.sb.comparator[9] [Comparator Match] 
+UVM_INFO @ 20850.0ns: uvm_test_top.env.sb.comparator[7] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 21050.0ns: uvm_test_top.env.sb [SB_INPUT_GET8] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 21050.0ns: uvm_test_top.env.i_agt[2].i_mon [MONITOR_INPUT_SEND] port_id 2 send a packet
+UVM_INFO driver.sv(26) @ 21050.0ns: uvm_test_top.env.i_agt[2].drv [PACKET_GET] port_id 2 get a packet
+UVM_INFO packet_sequence.sv(52) @ 21050.0ns: uvm_test_top.env.i_agt[2].seqr@@packet_sequence [PACKET_SEND] port_id 2 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 21150.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET8] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 21150.0ns: uvm_test_top.env.o_agt[8].o_mon [MONITOR_OUTPUT_SEND] port_id 8 send a packet
+UVM_INFO @ 21150.0ns: uvm_test_top.env.sb.comparator[8] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 21250.0ns: uvm_test_top.env.sb [SB_INPUT_GET5] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 21250.0ns: uvm_test_top.env.i_agt[8].i_mon [MONITOR_INPUT_SEND] port_id 8 send a packet
+UVM_INFO driver.sv(26) @ 21250.0ns: uvm_test_top.env.i_agt[8].drv [PACKET_GET] port_id 8 get a packet
+UVM_INFO packet_sequence.sv(52) @ 21250.0ns: uvm_test_top.env.i_agt[8].seqr@@packet_sequence [PACKET_SEND] port_id 8 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(29) @ 21350.0ns: uvm_test_top.env.sb [SB_INPUT_GET4] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 21350.0ns: uvm_test_top.env.i_agt[0].i_mon [MONITOR_INPUT_SEND] port_id 0 send a packet
+UVM_INFO scoreboard.sv(34) @ 21350.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET5] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 21350.0ns: uvm_test_top.env.o_agt[5].o_mon [MONITOR_OUTPUT_SEND] port_id 5 send a packet
+UVM_INFO driver.sv(26) @ 21350.0ns: uvm_test_top.env.i_agt[0].drv [PACKET_GET] port_id 0 get a packet
+UVM_INFO @ 21350.0ns: uvm_test_top.env.sb.comparator[5] [Comparator Match] 
+UVM_INFO packet_sequence.sv(52) @ 21350.0ns: uvm_test_top.env.i_agt[0].seqr@@packet_sequence [PACKET_SEND] port_id 0 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 21450.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET4] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 21450.0ns: uvm_test_top.env.o_agt[4].o_mon [MONITOR_OUTPUT_SEND] port_id 4 send a packet
+UVM_INFO @ 21450.0ns: uvm_test_top.env.sb.comparator[4] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 21750.0ns: uvm_test_top.env.sb [SB_INPUT_GET15] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 21750.0ns: uvm_test_top.env.i_agt[7].i_mon [MONITOR_INPUT_SEND] port_id 7 send a packet
+UVM_INFO driver.sv(26) @ 21750.0ns: uvm_test_top.env.i_agt[7].drv [PACKET_GET] port_id 7 get a packet
+UVM_INFO packet_sequence.sv(52) @ 21750.0ns: uvm_test_top.env.i_agt[7].seqr@@packet_sequence [PACKET_SEND] port_id 7 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 21850.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET15] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 21850.0ns: uvm_test_top.env.o_agt[15].o_mon [MONITOR_OUTPUT_SEND] port_id 15 send a packet
+UVM_INFO scoreboard.sv(29) @ 21850.0ns: uvm_test_top.env.sb [SB_INPUT_GET0] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 21850.0ns: uvm_test_top.env.i_agt[12].i_mon [MONITOR_INPUT_SEND] port_id 12 send a packet
+UVM_INFO driver.sv(26) @ 21850.0ns: uvm_test_top.env.i_agt[12].drv [PACKET_GET] port_id 12 get a packet
+UVM_INFO @ 21850.0ns: uvm_test_top.env.sb.comparator[15] [Comparator Match] 
+UVM_INFO packet_sequence.sv(52) @ 21850.0ns: uvm_test_top.env.i_agt[12].seqr@@packet_sequence [PACKET_SEND] port_id 12 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 21950.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET0] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 21950.0ns: uvm_test_top.env.o_agt[0].o_mon [MONITOR_OUTPUT_SEND] port_id 0 send a packet
+UVM_INFO @ 21950.0ns: uvm_test_top.env.sb.comparator[0] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 22350.0ns: uvm_test_top.env.sb [SB_INPUT_GET2] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 22350.0ns: uvm_test_top.env.i_agt[1].i_mon [MONITOR_INPUT_SEND] port_id 1 send a packet
+UVM_INFO driver.sv(26) @ 22350.0ns: uvm_test_top.env.i_agt[1].drv [PACKET_GET] port_id 1 get a packet
+UVM_INFO packet_sequence.sv(52) @ 22350.0ns: uvm_test_top.env.i_agt[1].seqr@@packet_sequence [PACKET_SEND] port_id 1 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 22450.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET2] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 22450.0ns: uvm_test_top.env.o_agt[2].o_mon [MONITOR_OUTPUT_SEND] port_id 2 send a packet
+UVM_INFO @ 22450.0ns: uvm_test_top.env.sb.comparator[2] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 22850.0ns: uvm_test_top.env.sb [SB_INPUT_GET6] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 22850.0ns: uvm_test_top.env.i_agt[14].i_mon [MONITOR_INPUT_SEND] port_id 14 send a packet
+UVM_INFO driver.sv(26) @ 22850.0ns: uvm_test_top.env.i_agt[14].drv [PACKET_GET] port_id 14 get a packet
+UVM_INFO packet_sequence.sv(52) @ 22850.0ns: uvm_test_top.env.i_agt[14].seqr@@packet_sequence [PACKET_SEND] port_id 14 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 22950.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET6] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 22950.0ns: uvm_test_top.env.o_agt[6].o_mon [MONITOR_OUTPUT_SEND] port_id 6 send a packet
+UVM_INFO @ 22950.0ns: uvm_test_top.env.sb.comparator[6] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 23350.0ns: uvm_test_top.env.sb [SB_INPUT_GET4] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 23350.0ns: uvm_test_top.env.i_agt[4].i_mon [MONITOR_INPUT_SEND] port_id 4 send a packet
+UVM_INFO driver.sv(26) @ 23350.0ns: uvm_test_top.env.i_agt[4].drv [PACKET_GET] port_id 4 get a packet
+UVM_INFO packet_sequence.sv(52) @ 23350.0ns: uvm_test_top.env.i_agt[4].seqr@@packet_sequence [PACKET_SEND] port_id 4 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 23450.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET4] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 23450.0ns: uvm_test_top.env.o_agt[4].o_mon [MONITOR_OUTPUT_SEND] port_id 4 send a packet
+UVM_INFO @ 23450.0ns: uvm_test_top.env.sb.comparator[4] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 23550.0ns: uvm_test_top.env.sb [SB_INPUT_GET7] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 23550.0ns: uvm_test_top.env.i_agt[5].i_mon [MONITOR_INPUT_SEND] port_id 5 send a packet
+UVM_INFO scoreboard.sv(29) @ 23550.0ns: uvm_test_top.env.sb [SB_INPUT_GET14] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 23550.0ns: uvm_test_top.env.i_agt[13].i_mon [MONITOR_INPUT_SEND] port_id 13 send a packet
+UVM_INFO scoreboard.sv(29) @ 23550.0ns: uvm_test_top.env.sb [SB_INPUT_GET8] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 23550.0ns: uvm_test_top.env.i_agt[2].i_mon [MONITOR_INPUT_SEND] port_id 2 send a packet
+UVM_INFO driver.sv(26) @ 23550.0ns: uvm_test_top.env.i_agt[5].drv [PACKET_GET] port_id 5 get a packet
+UVM_INFO driver.sv(26) @ 23550.0ns: uvm_test_top.env.i_agt[13].drv [PACKET_GET] port_id 13 get a packet
+UVM_INFO driver.sv(26) @ 23550.0ns: uvm_test_top.env.i_agt[2].drv [PACKET_GET] port_id 2 get a packet
+UVM_INFO packet_sequence.sv(52) @ 23550.0ns: uvm_test_top.env.i_agt[5].seqr@@packet_sequence [PACKET_SEND] port_id 5 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 23550.0ns: uvm_test_top.env.i_agt[13].seqr@@packet_sequence [PACKET_SEND] port_id 13 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 23550.0ns: uvm_test_top.env.i_agt[2].seqr@@packet_sequence [PACKET_SEND] port_id 2 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 23650.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET8] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 23650.0ns: uvm_test_top.env.o_agt[8].o_mon [MONITOR_OUTPUT_SEND] port_id 8 send a packet
+UVM_INFO scoreboard.sv(34) @ 23650.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET14] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 23650.0ns: uvm_test_top.env.o_agt[14].o_mon [MONITOR_OUTPUT_SEND] port_id 14 send a packet
+UVM_INFO scoreboard.sv(34) @ 23650.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET7] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 23650.0ns: uvm_test_top.env.o_agt[7].o_mon [MONITOR_OUTPUT_SEND] port_id 7 send a packet
+UVM_INFO @ 23650.0ns: uvm_test_top.env.sb.comparator[8] [Comparator Match] 
+UVM_INFO @ 23650.0ns: uvm_test_top.env.sb.comparator[14] [Comparator Match] 
+UVM_INFO @ 23650.0ns: uvm_test_top.env.sb.comparator[7] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 23750.0ns: uvm_test_top.env.sb [SB_INPUT_GET15] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 23750.0ns: uvm_test_top.env.i_agt[8].i_mon [MONITOR_INPUT_SEND] port_id 8 send a packet
+UVM_INFO scoreboard.sv(29) @ 23750.0ns: uvm_test_top.env.sb [SB_INPUT_GET1] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 23750.0ns: uvm_test_top.env.i_agt[15].i_mon [MONITOR_INPUT_SEND] port_id 15 send a packet
+UVM_INFO driver.sv(26) @ 23750.0ns: uvm_test_top.env.i_agt[15].drv [PACKET_GET] port_id 15 get a packet
+UVM_INFO driver.sv(26) @ 23750.0ns: uvm_test_top.env.i_agt[8].drv [PACKET_GET] port_id 8 get a packet
+UVM_INFO packet_sequence.sv(52) @ 23750.0ns: uvm_test_top.env.i_agt[15].seqr@@packet_sequence [PACKET_SEND] port_id 15 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 23750.0ns: uvm_test_top.env.i_agt[8].seqr@@packet_sequence [PACKET_SEND] port_id 8 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 23850.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET15] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 23850.0ns: uvm_test_top.env.o_agt[15].o_mon [MONITOR_OUTPUT_SEND] port_id 15 send a packet
+UVM_INFO scoreboard.sv(34) @ 23850.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET1] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 23850.0ns: uvm_test_top.env.o_agt[1].o_mon [MONITOR_OUTPUT_SEND] port_id 1 send a packet
+UVM_INFO @ 23850.0ns: uvm_test_top.env.sb.comparator[15] [Comparator Match] 
+UVM_INFO @ 23850.0ns: uvm_test_top.env.sb.comparator[1] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 24050.0ns: uvm_test_top.env.sb [SB_INPUT_GET12] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 24050.0ns: uvm_test_top.env.i_agt[1].i_mon [MONITOR_INPUT_SEND] port_id 1 send a packet
+UVM_INFO scoreboard.sv(29) @ 24050.0ns: uvm_test_top.env.sb [SB_INPUT_GET10] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 24050.0ns: uvm_test_top.env.i_agt[9].i_mon [MONITOR_INPUT_SEND] port_id 9 send a packet
+UVM_INFO driver.sv(26) @ 24050.0ns: uvm_test_top.env.i_agt[9].drv [PACKET_GET] port_id 9 get a packet
+UVM_INFO driver.sv(26) @ 24050.0ns: uvm_test_top.env.i_agt[1].drv [PACKET_GET] port_id 1 get a packet
+UVM_INFO packet_sequence.sv(52) @ 24050.0ns: uvm_test_top.env.i_agt[9].seqr@@packet_sequence [PACKET_SEND] port_id 9 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 24050.0ns: uvm_test_top.env.i_agt[1].seqr@@packet_sequence [PACKET_SEND] port_id 1 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 24150.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET12] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 24150.0ns: uvm_test_top.env.o_agt[12].o_mon [MONITOR_OUTPUT_SEND] port_id 12 send a packet
+UVM_INFO scoreboard.sv(34) @ 24150.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET10] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 24150.0ns: uvm_test_top.env.o_agt[10].o_mon [MONITOR_OUTPUT_SEND] port_id 10 send a packet
+UVM_INFO @ 24150.0ns: uvm_test_top.env.sb.comparator[12] [Comparator Match] 
+UVM_INFO @ 24150.0ns: uvm_test_top.env.sb.comparator[10] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 24350.0ns: uvm_test_top.env.sb [SB_INPUT_GET2] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 24350.0ns: uvm_test_top.env.i_agt[7].i_mon [MONITOR_INPUT_SEND] port_id 7 send a packet
+UVM_INFO scoreboard.sv(29) @ 24350.0ns: uvm_test_top.env.sb [SB_INPUT_GET3] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 24350.0ns: uvm_test_top.env.i_agt[12].i_mon [MONITOR_INPUT_SEND] port_id 12 send a packet
+UVM_INFO driver.sv(26) @ 24350.0ns: uvm_test_top.env.i_agt[7].drv [PACKET_GET] port_id 7 get a packet
+UVM_INFO driver.sv(26) @ 24350.0ns: uvm_test_top.env.i_agt[12].drv [PACKET_GET] port_id 12 get a packet
+UVM_INFO packet_sequence.sv(52) @ 24350.0ns: uvm_test_top.env.i_agt[7].seqr@@packet_sequence [PACKET_SEND] port_id 7 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 24350.0ns: uvm_test_top.env.i_agt[12].seqr@@packet_sequence [PACKET_SEND] port_id 12 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 24450.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET3] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 24450.0ns: uvm_test_top.env.o_agt[3].o_mon [MONITOR_OUTPUT_SEND] port_id 3 send a packet
+UVM_INFO scoreboard.sv(34) @ 24450.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET2] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 24450.0ns: uvm_test_top.env.o_agt[2].o_mon [MONITOR_OUTPUT_SEND] port_id 2 send a packet
+UVM_INFO @ 24450.0ns: uvm_test_top.env.sb.comparator[3] [Comparator Match] 
+UVM_INFO @ 24450.0ns: uvm_test_top.env.sb.comparator[2] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 24650.0ns: uvm_test_top.env.sb [SB_INPUT_GET0] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 24650.0ns: uvm_test_top.env.i_agt[3].i_mon [MONITOR_INPUT_SEND] port_id 3 send a packet
+UVM_INFO driver.sv(26) @ 24650.0ns: uvm_test_top.env.i_agt[3].drv [PACKET_GET] port_id 3 get a packet
+UVM_INFO packet_sequence.sv(52) @ 24650.0ns: uvm_test_top.env.i_agt[3].seqr@@packet_sequence [PACKET_SEND] port_id 3 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 24750.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET0] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 24750.0ns: uvm_test_top.env.o_agt[0].o_mon [MONITOR_OUTPUT_SEND] port_id 0 send a packet
+UVM_INFO @ 24750.0ns: uvm_test_top.env.sb.comparator[0] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 25050.0ns: uvm_test_top.env.sb [SB_INPUT_GET11] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 25050.0ns: uvm_test_top.env.i_agt[4].i_mon [MONITOR_INPUT_SEND] port_id 4 send a packet
+UVM_INFO driver.sv(26) @ 25050.0ns: uvm_test_top.env.i_agt[4].drv [PACKET_GET] port_id 4 get a packet
+UVM_INFO packet_sequence.sv(52) @ 25050.0ns: uvm_test_top.env.i_agt[4].seqr@@packet_sequence [PACKET_SEND] port_id 4 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 25150.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET11] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 25150.0ns: uvm_test_top.env.o_agt[11].o_mon [MONITOR_OUTPUT_SEND] port_id 11 send a packet
+UVM_INFO @ 25150.0ns: uvm_test_top.env.sb.comparator[11] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 26050.0ns: uvm_test_top.env.sb [SB_INPUT_GET10] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 26050.0ns: uvm_test_top.env.i_agt[14].i_mon [MONITOR_INPUT_SEND] port_id 14 send a packet
+UVM_INFO driver.sv(26) @ 26050.0ns: uvm_test_top.env.i_agt[14].drv [PACKET_GET] port_id 14 get a packet
+UVM_INFO packet_sequence.sv(52) @ 26050.0ns: uvm_test_top.env.i_agt[14].seqr@@packet_sequence [PACKET_SEND] port_id 14 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 26150.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET10] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 26150.0ns: uvm_test_top.env.o_agt[10].o_mon [MONITOR_OUTPUT_SEND] port_id 10 send a packet
+UVM_INFO @ 26150.0ns: uvm_test_top.env.sb.comparator[10] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 26350.0ns: uvm_test_top.env.sb [SB_INPUT_GET6] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 26350.0ns: uvm_test_top.env.i_agt[3].i_mon [MONITOR_INPUT_SEND] port_id 3 send a packet
+UVM_INFO scoreboard.sv(29) @ 26350.0ns: uvm_test_top.env.sb [SB_INPUT_GET14] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 26350.0ns: uvm_test_top.env.i_agt[6].i_mon [MONITOR_INPUT_SEND] port_id 6 send a packet
+UVM_INFO scoreboard.sv(29) @ 26350.0ns: uvm_test_top.env.sb [SB_INPUT_GET7] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 26350.0ns: uvm_test_top.env.i_agt[11].i_mon [MONITOR_INPUT_SEND] port_id 11 send a packet
+UVM_INFO driver.sv(26) @ 26350.0ns: uvm_test_top.env.i_agt[6].drv [PACKET_GET] port_id 6 get a packet
+UVM_INFO driver.sv(26) @ 26350.0ns: uvm_test_top.env.i_agt[11].drv [PACKET_GET] port_id 11 get a packet
+UVM_INFO driver.sv(26) @ 26350.0ns: uvm_test_top.env.i_agt[3].drv [PACKET_GET] port_id 3 get a packet
+UVM_INFO packet_sequence.sv(52) @ 26350.0ns: uvm_test_top.env.i_agt[6].seqr@@packet_sequence [PACKET_SEND] port_id 6 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 26350.0ns: uvm_test_top.env.i_agt[11].seqr@@packet_sequence [PACKET_SEND] port_id 11 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 26350.0ns: uvm_test_top.env.i_agt[3].seqr@@packet_sequence [PACKET_SEND] port_id 3 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 26450.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET6] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 26450.0ns: uvm_test_top.env.o_agt[6].o_mon [MONITOR_OUTPUT_SEND] port_id 6 send a packet
+UVM_INFO scoreboard.sv(34) @ 26450.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET14] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 26450.0ns: uvm_test_top.env.o_agt[14].o_mon [MONITOR_OUTPUT_SEND] port_id 14 send a packet
+UVM_INFO scoreboard.sv(34) @ 26450.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET7] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 26450.0ns: uvm_test_top.env.o_agt[7].o_mon [MONITOR_OUTPUT_SEND] port_id 7 send a packet
+UVM_INFO @ 26450.0ns: uvm_test_top.env.sb.comparator[6] [Comparator Match] 
+UVM_INFO @ 26450.0ns: uvm_test_top.env.sb.comparator[14] [Comparator Match] 
+UVM_INFO @ 26450.0ns: uvm_test_top.env.sb.comparator[7] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 26550.0ns: uvm_test_top.env.sb [SB_INPUT_GET1] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 26550.0ns: uvm_test_top.env.i_agt[0].i_mon [MONITOR_INPUT_SEND] port_id 0 send a packet
+UVM_INFO driver.sv(26) @ 26550.0ns: uvm_test_top.env.i_agt[0].drv [PACKET_GET] port_id 0 get a packet
+UVM_INFO packet_sequence.sv(52) @ 26550.0ns: uvm_test_top.env.i_agt[0].seqr@@packet_sequence [PACKET_SEND] port_id 0 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 26650.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET1] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 26650.0ns: uvm_test_top.env.o_agt[1].o_mon [MONITOR_OUTPUT_SEND] port_id 1 send a packet
+UVM_INFO @ 26650.0ns: uvm_test_top.env.sb.comparator[1] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 26850.0ns: uvm_test_top.env.sb [SB_INPUT_GET13] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 26850.0ns: uvm_test_top.env.i_agt[13].i_mon [MONITOR_INPUT_SEND] port_id 13 send a packet
+UVM_INFO driver.sv(26) @ 26850.0ns: uvm_test_top.env.i_agt[13].drv [PACKET_GET] port_id 13 get a packet
+UVM_INFO packet_sequence.sv(52) @ 26850.0ns: uvm_test_top.env.i_agt[13].seqr@@packet_sequence [PACKET_SEND] port_id 13 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 26950.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET13] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 26950.0ns: uvm_test_top.env.o_agt[13].o_mon [MONITOR_OUTPUT_SEND] port_id 13 send a packet
+UVM_INFO @ 26950.0ns: uvm_test_top.env.sb.comparator[13] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 27050.0ns: uvm_test_top.env.sb [SB_INPUT_GET15] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 27050.0ns: uvm_test_top.env.i_agt[8].i_mon [MONITOR_INPUT_SEND] port_id 8 send a packet
+UVM_INFO driver.sv(26) @ 27050.0ns: uvm_test_top.env.i_agt[8].drv [PACKET_GET] port_id 8 get a packet
+UVM_INFO packet_sequence.sv(52) @ 27050.0ns: uvm_test_top.env.i_agt[8].seqr@@packet_sequence [PACKET_SEND] port_id 8 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(29) @ 27150.0ns: uvm_test_top.env.sb [SB_INPUT_GET3] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 27150.0ns: uvm_test_top.env.i_agt[15].i_mon [MONITOR_INPUT_SEND] port_id 15 send a packet
+UVM_INFO scoreboard.sv(34) @ 27150.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET15] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 27150.0ns: uvm_test_top.env.o_agt[15].o_mon [MONITOR_OUTPUT_SEND] port_id 15 send a packet
+UVM_INFO driver.sv(26) @ 27150.0ns: uvm_test_top.env.i_agt[15].drv [PACKET_GET] port_id 15 get a packet
+UVM_INFO @ 27150.0ns: uvm_test_top.env.sb.comparator[15] [Comparator Match] 
+UVM_INFO packet_sequence.sv(52) @ 27150.0ns: uvm_test_top.env.i_agt[15].seqr@@packet_sequence [PACKET_SEND] port_id 15 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 27250.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET3] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 27250.0ns: uvm_test_top.env.o_agt[3].o_mon [MONITOR_OUTPUT_SEND] port_id 3 send a packet
+UVM_INFO @ 27250.0ns: uvm_test_top.env.sb.comparator[3] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 28050.0ns: uvm_test_top.env.sb [SB_INPUT_GET10] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 28050.0ns: uvm_test_top.env.i_agt[5].i_mon [MONITOR_INPUT_SEND] port_id 5 send a packet
+UVM_INFO scoreboard.sv(29) @ 28050.0ns: uvm_test_top.env.sb [SB_INPUT_GET7] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 28050.0ns: uvm_test_top.env.i_agt[3].i_mon [MONITOR_INPUT_SEND] port_id 3 send a packet
+UVM_INFO driver.sv(26) @ 28050.0ns: uvm_test_top.env.i_agt[5].drv [PACKET_GET] port_id 5 get a packet
+UVM_INFO driver.sv(26) @ 28050.0ns: uvm_test_top.env.i_agt[3].drv [PACKET_GET] port_id 3 get a packet
+UVM_INFO packet_sequence.sv(52) @ 28050.0ns: uvm_test_top.env.i_agt[5].seqr@@packet_sequence [PACKET_SEND] port_id 5 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 28050.0ns: uvm_test_top.env.i_agt[3].seqr@@packet_sequence [PACKET_SEND] port_id 3 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 28150.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET7] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 28150.0ns: uvm_test_top.env.o_agt[7].o_mon [MONITOR_OUTPUT_SEND] port_id 7 send a packet
+UVM_INFO scoreboard.sv(34) @ 28150.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET10] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 28150.0ns: uvm_test_top.env.o_agt[10].o_mon [MONITOR_OUTPUT_SEND] port_id 10 send a packet
+UVM_INFO @ 28150.0ns: uvm_test_top.env.sb.comparator[7] [Comparator Match] 
+UVM_INFO @ 28150.0ns: uvm_test_top.env.sb.comparator[10] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 28550.0ns: uvm_test_top.env.sb [SB_INPUT_GET0] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 28550.0ns: uvm_test_top.env.i_agt[13].i_mon [MONITOR_INPUT_SEND] port_id 13 send a packet
+UVM_INFO driver.sv(26) @ 28550.0ns: uvm_test_top.env.i_agt[13].drv [PACKET_GET] port_id 13 get a packet
+UVM_INFO packet_sequence.sv(52) @ 28550.0ns: uvm_test_top.env.i_agt[13].seqr@@packet_sequence [PACKET_SEND] port_id 13 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 28650.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET0] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 28650.0ns: uvm_test_top.env.o_agt[0].o_mon [MONITOR_OUTPUT_SEND] port_id 0 send a packet
+UVM_INFO @ 28650.0ns: uvm_test_top.env.sb.comparator[0] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 28850.0ns: uvm_test_top.env.sb [SB_INPUT_GET13] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 28850.0ns: uvm_test_top.env.i_agt[1].i_mon [MONITOR_INPUT_SEND] port_id 1 send a packet
+UVM_INFO scoreboard.sv(29) @ 28850.0ns: uvm_test_top.env.sb [SB_INPUT_GET8] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 28850.0ns: uvm_test_top.env.i_agt[6].i_mon [MONITOR_INPUT_SEND] port_id 6 send a packet
+UVM_INFO driver.sv(26) @ 28850.0ns: uvm_test_top.env.i_agt[1].drv [PACKET_GET] port_id 1 get a packet
+UVM_INFO driver.sv(26) @ 28850.0ns: uvm_test_top.env.i_agt[6].drv [PACKET_GET] port_id 6 get a packet
+UVM_INFO packet_sequence.sv(52) @ 28850.0ns: uvm_test_top.env.i_agt[1].seqr@@packet_sequence [PACKET_SEND] port_id 1 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 28850.0ns: uvm_test_top.env.i_agt[6].seqr@@packet_sequence [PACKET_SEND] port_id 6 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 28950.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET8] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 28950.0ns: uvm_test_top.env.o_agt[8].o_mon [MONITOR_OUTPUT_SEND] port_id 8 send a packet
+UVM_INFO scoreboard.sv(34) @ 28950.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET13] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 28950.0ns: uvm_test_top.env.o_agt[13].o_mon [MONITOR_OUTPUT_SEND] port_id 13 send a packet
+UVM_INFO @ 28950.0ns: uvm_test_top.env.sb.comparator[8] [Comparator Match] 
+UVM_INFO @ 28950.0ns: uvm_test_top.env.sb.comparator[13] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 29050.0ns: uvm_test_top.env.sb [SB_INPUT_GET15] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 29050.0ns: uvm_test_top.env.i_agt[9].i_mon [MONITOR_INPUT_SEND] port_id 9 send a packet
+UVM_INFO driver.sv(26) @ 29050.0ns: uvm_test_top.env.i_agt[9].drv [PACKET_GET] port_id 9 get a packet
+UVM_INFO packet_sequence.sv(52) @ 29050.0ns: uvm_test_top.env.i_agt[9].seqr@@packet_sequence [PACKET_SEND] port_id 9 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 29150.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET15] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 29150.0ns: uvm_test_top.env.o_agt[15].o_mon [MONITOR_OUTPUT_SEND] port_id 15 send a packet
+UVM_INFO scoreboard.sv(29) @ 29150.0ns: uvm_test_top.env.sb [SB_INPUT_GET14] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 29150.0ns: uvm_test_top.env.i_agt[10].i_mon [MONITOR_INPUT_SEND] port_id 10 send a packet
+UVM_INFO driver.sv(26) @ 29150.0ns: uvm_test_top.env.i_agt[10].drv [PACKET_GET] port_id 10 get a packet
+UVM_INFO @ 29150.0ns: uvm_test_top.env.sb.comparator[15] [Comparator Match] 
+UVM_INFO packet_sequence.sv(52) @ 29150.0ns: uvm_test_top.env.i_agt[10].seqr@@packet_sequence [PACKET_SEND] port_id 10 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 29250.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET14] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 29250.0ns: uvm_test_top.env.o_agt[14].o_mon [MONITOR_OUTPUT_SEND] port_id 14 send a packet
+UVM_INFO @ 29250.0ns: uvm_test_top.env.sb.comparator[14] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 29350.0ns: uvm_test_top.env.sb [SB_INPUT_GET1] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 29350.0ns: uvm_test_top.env.i_agt[2].i_mon [MONITOR_INPUT_SEND] port_id 2 send a packet
+UVM_INFO scoreboard.sv(29) @ 29350.0ns: uvm_test_top.env.sb [SB_INPUT_GET5] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 29350.0ns: uvm_test_top.env.i_agt[14].i_mon [MONITOR_INPUT_SEND] port_id 14 send a packet
+UVM_INFO driver.sv(26) @ 29350.0ns: uvm_test_top.env.i_agt[2].drv [PACKET_GET] port_id 2 get a packet
+UVM_INFO driver.sv(26) @ 29350.0ns: uvm_test_top.env.i_agt[14].drv [PACKET_GET] port_id 14 get a packet
+UVM_INFO packet_sequence.sv(52) @ 29350.0ns: uvm_test_top.env.i_agt[2].seqr@@packet_sequence [PACKET_SEND] port_id 2 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 29350.0ns: uvm_test_top.env.i_agt[14].seqr@@packet_sequence [PACKET_SEND] port_id 14 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 29450.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET5] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 29450.0ns: uvm_test_top.env.o_agt[5].o_mon [MONITOR_OUTPUT_SEND] port_id 5 send a packet
+UVM_INFO scoreboard.sv(34) @ 29450.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET1] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 29450.0ns: uvm_test_top.env.o_agt[1].o_mon [MONITOR_OUTPUT_SEND] port_id 1 send a packet
+UVM_INFO @ 29450.0ns: uvm_test_top.env.sb.comparator[5] [Comparator Match] 
+UVM_INFO @ 29450.0ns: uvm_test_top.env.sb.comparator[1] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 29650.0ns: uvm_test_top.env.sb [SB_INPUT_GET12] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 29650.0ns: uvm_test_top.env.i_agt[15].i_mon [MONITOR_INPUT_SEND] port_id 15 send a packet
+UVM_INFO driver.sv(26) @ 29650.0ns: uvm_test_top.env.i_agt[15].drv [PACKET_GET] port_id 15 get a packet
+UVM_INFO packet_sequence.sv(52) @ 29650.0ns: uvm_test_top.env.i_agt[15].seqr@@packet_sequence [PACKET_SEND] port_id 15 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 29750.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET12] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 29750.0ns: uvm_test_top.env.o_agt[12].o_mon [MONITOR_OUTPUT_SEND] port_id 12 send a packet
+UVM_INFO @ 29750.0ns: uvm_test_top.env.sb.comparator[12] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 29850.0ns: uvm_test_top.env.sb [SB_INPUT_GET2] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 29850.0ns: uvm_test_top.env.i_agt[0].i_mon [MONITOR_INPUT_SEND] port_id 0 send a packet
+UVM_INFO driver.sv(26) @ 29850.0ns: uvm_test_top.env.i_agt[0].drv [PACKET_GET] port_id 0 get a packet
+UVM_INFO packet_sequence.sv(52) @ 29850.0ns: uvm_test_top.env.i_agt[0].seqr@@packet_sequence [PACKET_SEND] port_id 0 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 29950.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET2] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 29950.0ns: uvm_test_top.env.o_agt[2].o_mon [MONITOR_OUTPUT_SEND] port_id 2 send a packet
+UVM_INFO @ 29950.0ns: uvm_test_top.env.sb.comparator[2] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 30050.0ns: uvm_test_top.env.sb [SB_INPUT_GET13] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 30050.0ns: uvm_test_top.env.i_agt[4].i_mon [MONITOR_INPUT_SEND] port_id 4 send a packet
+UVM_INFO driver.sv(26) @ 30050.0ns: uvm_test_top.env.i_agt[4].drv [PACKET_GET] port_id 4 get a packet
+UVM_INFO packet_sequence.sv(52) @ 30050.0ns: uvm_test_top.env.i_agt[4].seqr@@packet_sequence [PACKET_SEND] port_id 4 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 30150.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET13] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 30150.0ns: uvm_test_top.env.o_agt[13].o_mon [MONITOR_OUTPUT_SEND] port_id 13 send a packet
+UVM_INFO @ 30150.0ns: uvm_test_top.env.sb.comparator[13] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 30550.0ns: uvm_test_top.env.sb [SB_INPUT_GET10] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 30550.0ns: uvm_test_top.env.i_agt[5].i_mon [MONITOR_INPUT_SEND] port_id 5 send a packet
+UVM_INFO driver.sv(26) @ 30550.0ns: uvm_test_top.env.i_agt[5].drv [PACKET_GET] port_id 5 get a packet
+UVM_INFO packet_sequence.sv(52) @ 30550.0ns: uvm_test_top.env.i_agt[5].seqr@@packet_sequence [PACKET_SEND] port_id 5 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 30650.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET10] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 30650.0ns: uvm_test_top.env.o_agt[10].o_mon [MONITOR_OUTPUT_SEND] port_id 10 send a packet
+UVM_INFO @ 30650.0ns: uvm_test_top.env.sb.comparator[10] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 30850.0ns: uvm_test_top.env.sb [SB_INPUT_GET7] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 30850.0ns: uvm_test_top.env.i_agt[8].i_mon [MONITOR_INPUT_SEND] port_id 8 send a packet
+UVM_INFO driver.sv(26) @ 30850.0ns: uvm_test_top.env.i_agt[8].drv [PACKET_GET] port_id 8 get a packet
+UVM_INFO packet_sequence.sv(52) @ 30850.0ns: uvm_test_top.env.i_agt[8].seqr@@packet_sequence [PACKET_SEND] port_id 8 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 30950.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET7] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 30950.0ns: uvm_test_top.env.o_agt[7].o_mon [MONITOR_OUTPUT_SEND] port_id 7 send a packet
+UVM_INFO @ 30950.0ns: uvm_test_top.env.sb.comparator[7] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 31550.0ns: uvm_test_top.env.sb [SB_INPUT_GET8] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 31550.0ns: uvm_test_top.env.i_agt[0].i_mon [MONITOR_INPUT_SEND] port_id 0 send a packet
+UVM_INFO driver.sv(26) @ 31550.0ns: uvm_test_top.env.i_agt[0].drv [PACKET_GET] port_id 0 get a packet
+UVM_INFO packet_sequence.sv(52) @ 31550.0ns: uvm_test_top.env.i_agt[0].seqr@@packet_sequence [PACKET_SEND] port_id 0 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 31650.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET8] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 31650.0ns: uvm_test_top.env.o_agt[8].o_mon [MONITOR_OUTPUT_SEND] port_id 8 send a packet
+UVM_INFO scoreboard.sv(29) @ 31650.0ns: uvm_test_top.env.sb [SB_INPUT_GET12] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 31650.0ns: uvm_test_top.env.i_agt[1].i_mon [MONITOR_INPUT_SEND] port_id 1 send a packet
+UVM_INFO driver.sv(26) @ 31650.0ns: uvm_test_top.env.i_agt[1].drv [PACKET_GET] port_id 1 get a packet
+UVM_INFO @ 31650.0ns: uvm_test_top.env.sb.comparator[8] [Comparator Match] 
+UVM_INFO packet_sequence.sv(52) @ 31650.0ns: uvm_test_top.env.i_agt[1].seqr@@packet_sequence [PACKET_SEND] port_id 1 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(29) @ 31750.0ns: uvm_test_top.env.sb [SB_INPUT_GET10] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 31750.0ns: uvm_test_top.env.i_agt[13].i_mon [MONITOR_INPUT_SEND] port_id 13 send a packet
+UVM_INFO scoreboard.sv(29) @ 31750.0ns: uvm_test_top.env.sb [SB_INPUT_GET6] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 31750.0ns: uvm_test_top.env.i_agt[4].i_mon [MONITOR_INPUT_SEND] port_id 4 send a packet
+UVM_INFO scoreboard.sv(34) @ 31750.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET12] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 31750.0ns: uvm_test_top.env.o_agt[12].o_mon [MONITOR_OUTPUT_SEND] port_id 12 send a packet
+UVM_INFO driver.sv(26) @ 31750.0ns: uvm_test_top.env.i_agt[13].drv [PACKET_GET] port_id 13 get a packet
+UVM_INFO driver.sv(26) @ 31750.0ns: uvm_test_top.env.i_agt[4].drv [PACKET_GET] port_id 4 get a packet
+UVM_INFO @ 31750.0ns: uvm_test_top.env.sb.comparator[12] [Comparator Match] 
+UVM_INFO packet_sequence.sv(52) @ 31750.0ns: uvm_test_top.env.i_agt[13].seqr@@packet_sequence [PACKET_SEND] port_id 13 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 31750.0ns: uvm_test_top.env.i_agt[4].seqr@@packet_sequence [PACKET_SEND] port_id 4 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 31850.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET6] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 31850.0ns: uvm_test_top.env.o_agt[6].o_mon [MONITOR_OUTPUT_SEND] port_id 6 send a packet
+UVM_INFO scoreboard.sv(34) @ 31850.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET10] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 31850.0ns: uvm_test_top.env.o_agt[10].o_mon [MONITOR_OUTPUT_SEND] port_id 10 send a packet
+UVM_INFO scoreboard.sv(29) @ 31850.0ns: uvm_test_top.env.sb [SB_INPUT_GET15] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 31850.0ns: uvm_test_top.env.i_agt[12].i_mon [MONITOR_INPUT_SEND] port_id 12 send a packet
+UVM_INFO scoreboard.sv(29) @ 31850.0ns: uvm_test_top.env.sb [SB_INPUT_GET11] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 31850.0ns: uvm_test_top.env.i_agt[2].i_mon [MONITOR_INPUT_SEND] port_id 2 send a packet
+UVM_INFO driver.sv(26) @ 31850.0ns: uvm_test_top.env.i_agt[12].drv [PACKET_GET] port_id 12 get a packet
+UVM_INFO driver.sv(26) @ 31850.0ns: uvm_test_top.env.i_agt[2].drv [PACKET_GET] port_id 2 get a packet
+UVM_INFO @ 31850.0ns: uvm_test_top.env.sb.comparator[6] [Comparator Match] 
+UVM_INFO @ 31850.0ns: uvm_test_top.env.sb.comparator[10] [Comparator Match] 
+UVM_INFO packet_sequence.sv(52) @ 31850.0ns: uvm_test_top.env.i_agt[12].seqr@@packet_sequence [PACKET_SEND] port_id 12 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 31850.0ns: uvm_test_top.env.i_agt[2].seqr@@packet_sequence [PACKET_SEND] port_id 2 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 31950.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET11] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 31950.0ns: uvm_test_top.env.o_agt[11].o_mon [MONITOR_OUTPUT_SEND] port_id 11 send a packet
+UVM_INFO scoreboard.sv(34) @ 31950.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET15] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 31950.0ns: uvm_test_top.env.o_agt[15].o_mon [MONITOR_OUTPUT_SEND] port_id 15 send a packet
+UVM_INFO @ 31950.0ns: uvm_test_top.env.sb.comparator[11] [Comparator Match] 
+UVM_INFO @ 31950.0ns: uvm_test_top.env.sb.comparator[15] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 32050.0ns: uvm_test_top.env.sb [SB_INPUT_GET7] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 32050.0ns: uvm_test_top.env.i_agt[3].i_mon [MONITOR_INPUT_SEND] port_id 3 send a packet
+UVM_INFO driver.sv(26) @ 32050.0ns: uvm_test_top.env.i_agt[3].drv [PACKET_GET] port_id 3 get a packet
+UVM_INFO packet_sequence.sv(52) @ 32050.0ns: uvm_test_top.env.i_agt[3].seqr@@packet_sequence [PACKET_SEND] port_id 3 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 32150.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET7] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 32150.0ns: uvm_test_top.env.o_agt[7].o_mon [MONITOR_OUTPUT_SEND] port_id 7 send a packet
+UVM_INFO scoreboard.sv(29) @ 32150.0ns: uvm_test_top.env.sb [SB_INPUT_GET1] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 32150.0ns: uvm_test_top.env.i_agt[7].i_mon [MONITOR_INPUT_SEND] port_id 7 send a packet
+UVM_INFO driver.sv(26) @ 32150.0ns: uvm_test_top.env.i_agt[7].drv [PACKET_GET] port_id 7 get a packet
+UVM_INFO @ 32150.0ns: uvm_test_top.env.sb.comparator[7] [Comparator Match] 
+UVM_INFO packet_sequence.sv(52) @ 32150.0ns: uvm_test_top.env.i_agt[7].seqr@@packet_sequence [PACKET_SEND] port_id 7 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 32250.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET1] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 32250.0ns: uvm_test_top.env.o_agt[1].o_mon [MONITOR_OUTPUT_SEND] port_id 1 send a packet
+UVM_INFO @ 32250.0ns: uvm_test_top.env.sb.comparator[1] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 32350.0ns: uvm_test_top.env.sb [SB_INPUT_GET9] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 32350.0ns: uvm_test_top.env.i_agt[9].i_mon [MONITOR_INPUT_SEND] port_id 9 send a packet
+UVM_INFO driver.sv(26) @ 32350.0ns: uvm_test_top.env.i_agt[9].drv [PACKET_GET] port_id 9 get a packet
+UVM_INFO packet_sequence.sv(52) @ 32350.0ns: uvm_test_top.env.i_agt[9].seqr@@packet_sequence [PACKET_SEND] port_id 9 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 32450.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET9] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 32450.0ns: uvm_test_top.env.o_agt[9].o_mon [MONITOR_OUTPUT_SEND] port_id 9 send a packet
+UVM_INFO @ 32450.0ns: uvm_test_top.env.sb.comparator[9] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 32650.0ns: uvm_test_top.env.sb [SB_INPUT_GET4] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 32650.0ns: uvm_test_top.env.i_agt[14].i_mon [MONITOR_INPUT_SEND] port_id 14 send a packet
+UVM_INFO driver.sv(26) @ 32650.0ns: uvm_test_top.env.i_agt[14].drv [PACKET_GET] port_id 14 get a packet
+UVM_INFO packet_sequence.sv(52) @ 32650.0ns: uvm_test_top.env.i_agt[14].seqr@@packet_sequence [PACKET_SEND] port_id 14 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 32750.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET4] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 32750.0ns: uvm_test_top.env.o_agt[4].o_mon [MONITOR_OUTPUT_SEND] port_id 4 send a packet
+UVM_INFO @ 32750.0ns: uvm_test_top.env.sb.comparator[4] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 33050.0ns: uvm_test_top.env.sb [SB_INPUT_GET14] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 33050.0ns: uvm_test_top.env.i_agt[5].i_mon [MONITOR_INPUT_SEND] port_id 5 send a packet
+UVM_INFO driver.sv(26) @ 33050.0ns: uvm_test_top.env.i_agt[5].drv [PACKET_GET] port_id 5 get a packet
+UVM_INFO packet_sequence.sv(52) @ 33050.0ns: uvm_test_top.env.i_agt[5].seqr@@packet_sequence [PACKET_SEND] port_id 5 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 33150.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET14] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 33150.0ns: uvm_test_top.env.o_agt[14].o_mon [MONITOR_OUTPUT_SEND] port_id 14 send a packet
+UVM_INFO @ 33150.0ns: uvm_test_top.env.sb.comparator[14] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 33250.0ns: uvm_test_top.env.sb [SB_INPUT_GET10] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 33250.0ns: uvm_test_top.env.i_agt[0].i_mon [MONITOR_INPUT_SEND] port_id 0 send a packet
+UVM_INFO driver.sv(26) @ 33250.0ns: uvm_test_top.env.i_agt[0].drv [PACKET_GET] port_id 0 get a packet
+UVM_INFO packet_sequence.sv(52) @ 33250.0ns: uvm_test_top.env.i_agt[0].seqr@@packet_sequence [PACKET_SEND] port_id 0 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 33350.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET10] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 33350.0ns: uvm_test_top.env.o_agt[10].o_mon [MONITOR_OUTPUT_SEND] port_id 10 send a packet
+UVM_INFO @ 33350.0ns: uvm_test_top.env.sb.comparator[10] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 33450.0ns: uvm_test_top.env.sb [SB_INPUT_GET0] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 33450.0ns: uvm_test_top.env.i_agt[13].i_mon [MONITOR_INPUT_SEND] port_id 13 send a packet
+UVM_INFO driver.sv(26) @ 33450.0ns: uvm_test_top.env.i_agt[13].drv [PACKET_GET] port_id 13 get a packet
+UVM_INFO packet_sequence.sv(52) @ 33450.0ns: uvm_test_top.env.i_agt[13].seqr@@packet_sequence [PACKET_SEND] port_id 13 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(29) @ 33550.0ns: uvm_test_top.env.sb [SB_INPUT_GET9] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 33550.0ns: uvm_test_top.env.i_agt[15].i_mon [MONITOR_INPUT_SEND] port_id 15 send a packet
+UVM_INFO scoreboard.sv(34) @ 33550.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET0] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 33550.0ns: uvm_test_top.env.o_agt[0].o_mon [MONITOR_OUTPUT_SEND] port_id 0 send a packet
+UVM_INFO driver.sv(26) @ 33550.0ns: uvm_test_top.env.i_agt[15].drv [PACKET_GET] port_id 15 get a packet
+UVM_INFO @ 33550.0ns: uvm_test_top.env.sb.comparator[0] [Comparator Match] 
+UVM_INFO packet_sequence.sv(52) @ 33550.0ns: uvm_test_top.env.i_agt[15].seqr@@packet_sequence [PACKET_SEND] port_id 15 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 33650.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET9] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 33650.0ns: uvm_test_top.env.o_agt[9].o_mon [MONITOR_OUTPUT_SEND] port_id 9 send a packet
+UVM_INFO @ 33650.0ns: uvm_test_top.env.sb.comparator[9] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 34050.0ns: uvm_test_top.env.sb [SB_INPUT_GET7] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 34050.0ns: uvm_test_top.env.i_agt[6].i_mon [MONITOR_INPUT_SEND] port_id 6 send a packet
+UVM_INFO driver.sv(26) @ 34050.0ns: uvm_test_top.env.i_agt[6].drv [PACKET_GET] port_id 6 get a packet
+UVM_INFO packet_sequence.sv(52) @ 34050.0ns: uvm_test_top.env.i_agt[6].seqr@@packet_sequence [PACKET_SEND] port_id 6 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 34150.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET7] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 34150.0ns: uvm_test_top.env.o_agt[7].o_mon [MONITOR_OUTPUT_SEND] port_id 7 send a packet
+UVM_INFO scoreboard.sv(29) @ 34150.0ns: uvm_test_top.env.sb [SB_INPUT_GET6] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 34150.0ns: uvm_test_top.env.i_agt[1].i_mon [MONITOR_INPUT_SEND] port_id 1 send a packet
+UVM_INFO driver.sv(26) @ 34150.0ns: uvm_test_top.env.i_agt[1].drv [PACKET_GET] port_id 1 get a packet
+UVM_INFO @ 34150.0ns: uvm_test_top.env.sb.comparator[7] [Comparator Match] 
+UVM_INFO packet_sequence.sv(52) @ 34150.0ns: uvm_test_top.env.i_agt[1].seqr@@packet_sequence [PACKET_SEND] port_id 1 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 34250.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET6] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 34250.0ns: uvm_test_top.env.o_agt[6].o_mon [MONITOR_OUTPUT_SEND] port_id 6 send a packet
+UVM_INFO @ 34250.0ns: uvm_test_top.env.sb.comparator[6] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 34350.0ns: uvm_test_top.env.sb [SB_INPUT_GET14] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 34350.0ns: uvm_test_top.env.i_agt[14].i_mon [MONITOR_INPUT_SEND] port_id 14 send a packet
+UVM_INFO driver.sv(26) @ 34350.0ns: uvm_test_top.env.i_agt[14].drv [PACKET_GET] port_id 14 get a packet
+UVM_INFO packet_sequence.sv(52) @ 34350.0ns: uvm_test_top.env.i_agt[14].seqr@@packet_sequence [PACKET_SEND] port_id 14 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 34450.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET14] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 34450.0ns: uvm_test_top.env.o_agt[14].o_mon [MONITOR_OUTPUT_SEND] port_id 14 send a packet
+UVM_INFO scoreboard.sv(29) @ 34450.0ns: uvm_test_top.env.sb [SB_INPUT_GET12] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 34450.0ns: uvm_test_top.env.i_agt[10].i_mon [MONITOR_INPUT_SEND] port_id 10 send a packet
+UVM_INFO driver.sv(26) @ 34450.0ns: uvm_test_top.env.i_agt[10].drv [PACKET_GET] port_id 10 get a packet
+UVM_INFO @ 34450.0ns: uvm_test_top.env.sb.comparator[14] [Comparator Match] 
+UVM_INFO packet_sequence.sv(52) @ 34450.0ns: uvm_test_top.env.i_agt[10].seqr@@packet_sequence [PACKET_SEND] port_id 10 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 34550.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET12] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 34550.0ns: uvm_test_top.env.o_agt[12].o_mon [MONITOR_OUTPUT_SEND] port_id 12 send a packet
+UVM_INFO @ 34550.0ns: uvm_test_top.env.sb.comparator[12] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 34650.0ns: uvm_test_top.env.sb [SB_INPUT_GET3] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 34650.0ns: uvm_test_top.env.i_agt[7].i_mon [MONITOR_INPUT_SEND] port_id 7 send a packet
+UVM_INFO driver.sv(26) @ 34650.0ns: uvm_test_top.env.i_agt[7].drv [PACKET_GET] port_id 7 get a packet
+UVM_INFO packet_sequence.sv(52) @ 34650.0ns: uvm_test_top.env.i_agt[7].seqr@@packet_sequence [PACKET_SEND] port_id 7 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(29) @ 34750.0ns: uvm_test_top.env.sb [SB_INPUT_GET9] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 34750.0ns: uvm_test_top.env.i_agt[3].i_mon [MONITOR_INPUT_SEND] port_id 3 send a packet
+UVM_INFO scoreboard.sv(34) @ 34750.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET3] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 34750.0ns: uvm_test_top.env.o_agt[3].o_mon [MONITOR_OUTPUT_SEND] port_id 3 send a packet
+UVM_INFO driver.sv(26) @ 34750.0ns: uvm_test_top.env.i_agt[3].drv [PACKET_GET] port_id 3 get a packet
+UVM_INFO @ 34750.0ns: uvm_test_top.env.sb.comparator[3] [Comparator Match] 
+UVM_INFO packet_sequence.sv(52) @ 34750.0ns: uvm_test_top.env.i_agt[3].seqr@@packet_sequence [PACKET_SEND] port_id 3 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 34850.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET9] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 34850.0ns: uvm_test_top.env.o_agt[9].o_mon [MONITOR_OUTPUT_SEND] port_id 9 send a packet
+UVM_INFO @ 34850.0ns: uvm_test_top.env.sb.comparator[9] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 34950.0ns: uvm_test_top.env.sb [SB_INPUT_GET1] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 34950.0ns: uvm_test_top.env.i_agt[11].i_mon [MONITOR_INPUT_SEND] port_id 11 send a packet
+UVM_INFO driver.sv(26) @ 34950.0ns: uvm_test_top.env.i_agt[11].drv [PACKET_GET] port_id 11 get a packet
+UVM_INFO packet_sequence.sv(52) @ 34950.0ns: uvm_test_top.env.i_agt[11].seqr@@packet_sequence [PACKET_SEND] port_id 11 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 35050.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET1] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 35050.0ns: uvm_test_top.env.o_agt[1].o_mon [MONITOR_OUTPUT_SEND] port_id 1 send a packet
+UVM_INFO @ 35050.0ns: uvm_test_top.env.sb.comparator[1] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 35150.0ns: uvm_test_top.env.sb [SB_INPUT_GET8] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 35150.0ns: uvm_test_top.env.i_agt[12].i_mon [MONITOR_INPUT_SEND] port_id 12 send a packet
+UVM_INFO driver.sv(26) @ 35150.0ns: uvm_test_top.env.i_agt[12].drv [PACKET_GET] port_id 12 get a packet
+UVM_INFO packet_sequence.sv(52) @ 35150.0ns: uvm_test_top.env.i_agt[12].seqr@@packet_sequence [PACKET_SEND] port_id 12 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(29) @ 35250.0ns: uvm_test_top.env.sb [SB_INPUT_GET7] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 35250.0ns: uvm_test_top.env.i_agt[8].i_mon [MONITOR_INPUT_SEND] port_id 8 send a packet
+UVM_INFO scoreboard.sv(29) @ 35250.0ns: uvm_test_top.env.sb [SB_INPUT_GET2] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 35250.0ns: uvm_test_top.env.i_agt[15].i_mon [MONITOR_INPUT_SEND] port_id 15 send a packet
+UVM_INFO scoreboard.sv(34) @ 35250.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET8] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 35250.0ns: uvm_test_top.env.o_agt[8].o_mon [MONITOR_OUTPUT_SEND] port_id 8 send a packet
+UVM_INFO driver.sv(26) @ 35250.0ns: uvm_test_top.env.i_agt[8].drv [PACKET_GET] port_id 8 get a packet
+UVM_INFO driver.sv(26) @ 35250.0ns: uvm_test_top.env.i_agt[15].drv [PACKET_GET] port_id 15 get a packet
+UVM_INFO @ 35250.0ns: uvm_test_top.env.sb.comparator[8] [Comparator Match] 
+UVM_INFO packet_sequence.sv(52) @ 35250.0ns: uvm_test_top.env.i_agt[8].seqr@@packet_sequence [PACKET_SEND] port_id 8 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 35250.0ns: uvm_test_top.env.i_agt[15].seqr@@packet_sequence [PACKET_SEND] port_id 15 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 35350.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET2] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 35350.0ns: uvm_test_top.env.o_agt[2].o_mon [MONITOR_OUTPUT_SEND] port_id 2 send a packet
+UVM_INFO scoreboard.sv(34) @ 35350.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET7] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 35350.0ns: uvm_test_top.env.o_agt[7].o_mon [MONITOR_OUTPUT_SEND] port_id 7 send a packet
+UVM_INFO @ 35350.0ns: uvm_test_top.env.sb.comparator[2] [Comparator Match] 
+UVM_INFO @ 35350.0ns: uvm_test_top.env.sb.comparator[7] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 35950.0ns: uvm_test_top.env.sb [SB_INPUT_GET9] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 35950.0ns: uvm_test_top.env.i_agt[9].i_mon [MONITOR_INPUT_SEND] port_id 9 send a packet
+UVM_INFO scoreboard.sv(29) @ 35950.0ns: uvm_test_top.env.sb [SB_INPUT_GET5] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 35950.0ns: uvm_test_top.env.i_agt[13].i_mon [MONITOR_INPUT_SEND] port_id 13 send a packet
+UVM_INFO driver.sv(26) @ 35950.0ns: uvm_test_top.env.i_agt[9].drv [PACKET_GET] port_id 9 get a packet
+UVM_INFO driver.sv(26) @ 35950.0ns: uvm_test_top.env.i_agt[13].drv [PACKET_GET] port_id 13 get a packet
+UVM_INFO packet_sequence.sv(52) @ 35950.0ns: uvm_test_top.env.i_agt[9].seqr@@packet_sequence [PACKET_SEND] port_id 9 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 35950.0ns: uvm_test_top.env.i_agt[13].seqr@@packet_sequence [PACKET_SEND] port_id 13 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 36050.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET9] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 36050.0ns: uvm_test_top.env.o_agt[9].o_mon [MONITOR_OUTPUT_SEND] port_id 9 send a packet
+UVM_INFO scoreboard.sv(29) @ 36050.0ns: uvm_test_top.env.sb [SB_INPUT_GET13] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 36050.0ns: uvm_test_top.env.i_agt[14].i_mon [MONITOR_INPUT_SEND] port_id 14 send a packet
+UVM_INFO scoreboard.sv(34) @ 36050.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET5] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 36050.0ns: uvm_test_top.env.o_agt[5].o_mon [MONITOR_OUTPUT_SEND] port_id 5 send a packet
+UVM_INFO driver.sv(26) @ 36050.0ns: uvm_test_top.env.i_agt[14].drv [PACKET_GET] port_id 14 get a packet
+UVM_INFO @ 36050.0ns: uvm_test_top.env.sb.comparator[9] [Comparator Match] 
+UVM_INFO @ 36050.0ns: uvm_test_top.env.sb.comparator[5] [Comparator Match] 
+UVM_INFO packet_sequence.sv(52) @ 36050.0ns: uvm_test_top.env.i_agt[14].seqr@@packet_sequence [PACKET_SEND] port_id 14 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 36150.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET13] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 36150.0ns: uvm_test_top.env.o_agt[13].o_mon [MONITOR_OUTPUT_SEND] port_id 13 send a packet
+UVM_INFO @ 36150.0ns: uvm_test_top.env.sb.comparator[13] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 36350.0ns: uvm_test_top.env.sb [SB_INPUT_GET6] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 36350.0ns: uvm_test_top.env.i_agt[7].i_mon [MONITOR_INPUT_SEND] port_id 7 send a packet
+UVM_INFO driver.sv(26) @ 36350.0ns: uvm_test_top.env.i_agt[7].drv [PACKET_GET] port_id 7 get a packet
+UVM_INFO packet_sequence.sv(52) @ 36350.0ns: uvm_test_top.env.i_agt[7].seqr@@packet_sequence [PACKET_SEND] port_id 7 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 36450.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET6] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 36450.0ns: uvm_test_top.env.o_agt[6].o_mon [MONITOR_OUTPUT_SEND] port_id 6 send a packet
+UVM_INFO @ 36450.0ns: uvm_test_top.env.sb.comparator[6] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 36850.0ns: uvm_test_top.env.sb [SB_INPUT_GET12] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 36850.0ns: uvm_test_top.env.i_agt[12].i_mon [MONITOR_INPUT_SEND] port_id 12 send a packet
+UVM_INFO driver.sv(26) @ 36850.0ns: uvm_test_top.env.i_agt[12].drv [PACKET_GET] port_id 12 get a packet
+UVM_INFO packet_sequence.sv(52) @ 36850.0ns: uvm_test_top.env.i_agt[12].seqr@@packet_sequence [PACKET_SEND] port_id 12 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 36950.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET12] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 36950.0ns: uvm_test_top.env.o_agt[12].o_mon [MONITOR_OUTPUT_SEND] port_id 12 send a packet
+UVM_INFO scoreboard.sv(29) @ 36950.0ns: uvm_test_top.env.sb [SB_INPUT_GET3] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 36950.0ns: uvm_test_top.env.i_agt[10].i_mon [MONITOR_INPUT_SEND] port_id 10 send a packet
+UVM_INFO driver.sv(26) @ 36950.0ns: uvm_test_top.env.i_agt[10].drv [PACKET_GET] port_id 10 get a packet
+UVM_INFO @ 36950.0ns: uvm_test_top.env.sb.comparator[12] [Comparator Match] 
+UVM_INFO packet_sequence.sv(52) @ 36950.0ns: uvm_test_top.env.i_agt[10].seqr@@packet_sequence [PACKET_SEND] port_id 10 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 37050.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET3] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 37050.0ns: uvm_test_top.env.o_agt[3].o_mon [MONITOR_OUTPUT_SEND] port_id 3 send a packet
+UVM_INFO @ 37050.0ns: uvm_test_top.env.sb.comparator[3] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 37750.0ns: uvm_test_top.env.sb [SB_INPUT_GET1] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 37750.0ns: uvm_test_top.env.i_agt[5].i_mon [MONITOR_INPUT_SEND] port_id 5 send a packet
+UVM_INFO scoreboard.sv(29) @ 37750.0ns: uvm_test_top.env.sb [SB_INPUT_GET8] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 37750.0ns: uvm_test_top.env.i_agt[8].i_mon [MONITOR_INPUT_SEND] port_id 8 send a packet
+UVM_INFO driver.sv(26) @ 37750.0ns: uvm_test_top.env.i_agt[5].drv [PACKET_GET] port_id 5 get a packet
+UVM_INFO driver.sv(26) @ 37750.0ns: uvm_test_top.env.i_agt[8].drv [PACKET_GET] port_id 8 get a packet
+UVM_INFO packet_sequence.sv(52) @ 37750.0ns: uvm_test_top.env.i_agt[5].seqr@@packet_sequence [PACKET_SEND] port_id 5 test.\packet_sequence::body 
+UVM_INFO packet_sequence.sv(52) @ 37750.0ns: uvm_test_top.env.i_agt[8].seqr@@packet_sequence [PACKET_SEND] port_id 8 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 37850.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET8] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 37850.0ns: uvm_test_top.env.o_agt[8].o_mon [MONITOR_OUTPUT_SEND] port_id 8 send a packet
+UVM_INFO scoreboard.sv(34) @ 37850.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET1] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 37850.0ns: uvm_test_top.env.o_agt[1].o_mon [MONITOR_OUTPUT_SEND] port_id 1 send a packet
+UVM_INFO @ 37850.0ns: uvm_test_top.env.sb.comparator[8] [Comparator Match] 
+UVM_INFO @ 37850.0ns: uvm_test_top.env.sb.comparator[1] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 38050.0ns: uvm_test_top.env.sb [SB_INPUT_GET7] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 38050.0ns: uvm_test_top.env.i_agt[4].i_mon [MONITOR_INPUT_SEND] port_id 4 send a packet
+UVM_INFO driver.sv(26) @ 38050.0ns: uvm_test_top.env.i_agt[4].drv [PACKET_GET] port_id 4 get a packet
+UVM_INFO packet_sequence.sv(52) @ 38050.0ns: uvm_test_top.env.i_agt[4].seqr@@packet_sequence [PACKET_SEND] port_id 4 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(29) @ 38150.0ns: uvm_test_top.env.sb [SB_INPUT_GET3] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 38150.0ns: uvm_test_top.env.i_agt[11].i_mon [MONITOR_INPUT_SEND] port_id 11 send a packet
+UVM_INFO scoreboard.sv(34) @ 38150.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET7] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 38150.0ns: uvm_test_top.env.o_agt[7].o_mon [MONITOR_OUTPUT_SEND] port_id 7 send a packet
+UVM_INFO driver.sv(26) @ 38150.0ns: uvm_test_top.env.i_agt[11].drv [PACKET_GET] port_id 11 get a packet
+UVM_INFO @ 38150.0ns: uvm_test_top.env.sb.comparator[7] [Comparator Match] 
+UVM_INFO packet_sequence.sv(52) @ 38150.0ns: uvm_test_top.env.i_agt[11].seqr@@packet_sequence [PACKET_SEND] port_id 11 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 38250.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET3] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 38250.0ns: uvm_test_top.env.o_agt[3].o_mon [MONITOR_OUTPUT_SEND] port_id 3 send a packet
+UVM_INFO @ 38250.0ns: uvm_test_top.env.sb.comparator[3] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 39350.0ns: uvm_test_top.env.sb [SB_INPUT_GET9] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 39350.0ns: uvm_test_top.env.i_agt[12].i_mon [MONITOR_INPUT_SEND] port_id 12 send a packet
+UVM_INFO driver.sv(26) @ 39350.0ns: uvm_test_top.env.i_agt[12].drv [PACKET_GET] port_id 12 get a packet
+UVM_INFO packet_sequence.sv(52) @ 39350.0ns: uvm_test_top.env.i_agt[12].seqr@@packet_sequence [PACKET_SEND] port_id 12 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 39450.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET9] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 39450.0ns: uvm_test_top.env.o_agt[9].o_mon [MONITOR_OUTPUT_SEND] port_id 9 send a packet
+UVM_INFO scoreboard.sv(29) @ 39450.0ns: uvm_test_top.env.sb [SB_INPUT_GET5] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 39450.0ns: uvm_test_top.env.i_agt[10].i_mon [MONITOR_INPUT_SEND] port_id 10 send a packet
+UVM_INFO driver.sv(26) @ 39450.0ns: uvm_test_top.env.i_agt[10].drv [PACKET_GET] port_id 10 get a packet
+UVM_INFO @ 39450.0ns: uvm_test_top.env.sb.comparator[9] [Comparator Match] 
+UVM_INFO packet_sequence.sv(52) @ 39450.0ns: uvm_test_top.env.i_agt[10].seqr@@packet_sequence [PACKET_SEND] port_id 10 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 39550.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET5] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 39550.0ns: uvm_test_top.env.o_agt[5].o_mon [MONITOR_OUTPUT_SEND] port_id 5 send a packet
+UVM_INFO @ 39550.0ns: uvm_test_top.env.sb.comparator[5] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 40050.0ns: uvm_test_top.env.sb [SB_INPUT_GET7] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 40050.0ns: uvm_test_top.env.i_agt[6].i_mon [MONITOR_INPUT_SEND] port_id 6 send a packet
+UVM_INFO driver.sv(26) @ 40050.0ns: uvm_test_top.env.i_agt[6].drv [PACKET_GET] port_id 6 get a packet
+UVM_INFO packet_sequence.sv(52) @ 40050.0ns: uvm_test_top.env.i_agt[6].seqr@@packet_sequence [PACKET_SEND] port_id 6 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 40150.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET7] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 40150.0ns: uvm_test_top.env.o_agt[7].o_mon [MONITOR_OUTPUT_SEND] port_id 7 send a packet
+UVM_INFO @ 40150.0ns: uvm_test_top.env.sb.comparator[7] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 40550.0ns: uvm_test_top.env.sb [SB_INPUT_GET8] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 40550.0ns: uvm_test_top.env.i_agt[7].i_mon [MONITOR_INPUT_SEND] port_id 7 send a packet
+UVM_INFO driver.sv(26) @ 40550.0ns: uvm_test_top.env.i_agt[7].drv [PACKET_GET] port_id 7 get a packet
+UVM_INFO packet_sequence.sv(52) @ 40550.0ns: uvm_test_top.env.i_agt[7].seqr@@packet_sequence [PACKET_SEND] port_id 7 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 40650.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET8] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 40650.0ns: uvm_test_top.env.o_agt[8].o_mon [MONITOR_OUTPUT_SEND] port_id 8 send a packet
+UVM_INFO @ 40650.0ns: uvm_test_top.env.sb.comparator[8] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 41050.0ns: uvm_test_top.env.sb [SB_INPUT_GET14] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 41050.0ns: uvm_test_top.env.i_agt[5].i_mon [MONITOR_INPUT_SEND] port_id 5 send a packet
+UVM_INFO driver.sv(26) @ 41050.0ns: uvm_test_top.env.i_agt[5].drv [PACKET_GET] port_id 5 get a packet
+UVM_INFO packet_sequence.sv(52) @ 41050.0ns: uvm_test_top.env.i_agt[5].seqr@@packet_sequence [PACKET_SEND] port_id 5 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 41150.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET14] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 41150.0ns: uvm_test_top.env.o_agt[14].o_mon [MONITOR_OUTPUT_SEND] port_id 14 send a packet
+UVM_INFO @ 41150.0ns: uvm_test_top.env.sb.comparator[14] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 42050.0ns: uvm_test_top.env.sb [SB_INPUT_GET7] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 42050.0ns: uvm_test_top.env.i_agt[11].i_mon [MONITOR_INPUT_SEND] port_id 11 send a packet
+UVM_INFO driver.sv(26) @ 42050.0ns: uvm_test_top.env.i_agt[11].drv [PACKET_GET] port_id 11 get a packet
+UVM_INFO packet_sequence.sv(52) @ 42050.0ns: uvm_test_top.env.i_agt[11].seqr@@packet_sequence [PACKET_SEND] port_id 11 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 42150.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET7] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 42150.0ns: uvm_test_top.env.o_agt[7].o_mon [MONITOR_OUTPUT_SEND] port_id 7 send a packet
+UVM_INFO @ 42150.0ns: uvm_test_top.env.sb.comparator[7] [Comparator Match] 
+UVM_INFO scoreboard.sv(29) @ 44050.0ns: uvm_test_top.env.sb [SB_INPUT_GET7] scoreboard get a packet
+UVM_INFO input_monitor.sv(31) @ 44050.0ns: uvm_test_top.env.i_agt[14].i_mon [MONITOR_INPUT_SEND] port_id 14 send a packet
+UVM_INFO driver.sv(26) @ 44050.0ns: uvm_test_top.env.i_agt[14].drv [PACKET_GET] port_id 14 get a packet
+UVM_INFO packet_sequence.sv(52) @ 44050.0ns: uvm_test_top.env.i_agt[14].seqr@@packet_sequence [PACKET_SEND] port_id 14 test.\packet_sequence::body 
+UVM_INFO scoreboard.sv(34) @ 44150.0ns: uvm_test_top.env.sb [SB_OUTPUT_GET7] scoreboard get a packet
+UVM_INFO output_monitor.sv(32) @ 44150.0ns: uvm_test_top.env.o_agt[7].o_mon [MONITOR_OUTPUT_SEND] port_id 7 send a packet
+UVM_INFO @ 44150.0ns: uvm_test_top.env.sb.comparator[7] [Comparator Match] 
+UVM_INFO scoreboard.sv(40) @ 45050.0ns: uvm_test_top.env.sb [SB_REPORT[0]] Match 7, MisMatch 0
+UVM_INFO scoreboard.sv(40) @ 45050.0ns: uvm_test_top.env.sb [SB_REPORT[1]] Match 12, MisMatch 0
+UVM_INFO scoreboard.sv(40) @ 45050.0ns: uvm_test_top.env.sb [SB_REPORT[2]] Match 9, MisMatch 0
+UVM_INFO scoreboard.sv(40) @ 45050.0ns: uvm_test_top.env.sb [SB_REPORT[3]] Match 6, MisMatch 0
+UVM_INFO scoreboard.sv(40) @ 45050.0ns: uvm_test_top.env.sb [SB_REPORT[4]] Match 10, MisMatch 0
+UVM_INFO scoreboard.sv(40) @ 45050.0ns: uvm_test_top.env.sb [SB_REPORT[5]] Match 14, MisMatch 0
+UVM_INFO scoreboard.sv(40) @ 45050.0ns: uvm_test_top.env.sb [SB_REPORT[6]] Match 8, MisMatch 0
+UVM_INFO scoreboard.sv(40) @ 45050.0ns: uvm_test_top.env.sb [SB_REPORT[7]] Match 17, MisMatch 0
+UVM_INFO scoreboard.sv(40) @ 45050.0ns: uvm_test_top.env.sb [SB_REPORT[8]] Match 12, MisMatch 0
+UVM_INFO scoreboard.sv(40) @ 45050.0ns: uvm_test_top.env.sb [SB_REPORT[9]] Match 8, MisMatch 0
+UVM_INFO scoreboard.sv(40) @ 45050.0ns: uvm_test_top.env.sb [SB_REPORT[10]] Match 10, MisMatch 0
+UVM_INFO scoreboard.sv(40) @ 45050.0ns: uvm_test_top.env.sb [SB_REPORT[11]] Match 8, MisMatch 0
+UVM_INFO scoreboard.sv(40) @ 45050.0ns: uvm_test_top.env.sb [SB_REPORT[12]] Match 9, MisMatch 0
+UVM_INFO scoreboard.sv(40) @ 45050.0ns: uvm_test_top.env.sb [SB_REPORT[13]] Match 7, MisMatch 0
+UVM_INFO scoreboard.sv(40) @ 45050.0ns: uvm_test_top.env.sb [SB_REPORT[14]] Match 10, MisMatch 0
+UVM_INFO scoreboard.sv(40) @ 45050.0ns: uvm_test_top.env.sb [SB_REPORT[15]] Match 13, MisMatch 0
+
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO : 1167
+UVM_WARNING :    1
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[Comparator Match]   160
+[DATA_INFO]    16
+[DEBUG_RESET]     1
+[HOST_GET_AFTER]     3
+[HOST_GET_BEFORE]     3
+[MONITOR_INPUT_SEND]   160
+[MONITOR_OUTPUT_SEND]   160
+[PACKET_GET]   160
+[PACKET_SEND]   160
+[RAL_HOST_AGENT]     1
+[RAL_READ]     2
+[RAL_WRITE]     1
+[RNTST]     1
+[SB_INPUT_GET0]     7
+[SB_INPUT_GET1]    12
+[SB_INPUT_GET10]    10
+[SB_INPUT_GET11]     8
+[SB_INPUT_GET12]     9
+[SB_INPUT_GET13]     7
+[SB_INPUT_GET14]    10
+[SB_INPUT_GET15]    13
+[SB_INPUT_GET2]     9
+[SB_INPUT_GET3]     6
+[SB_INPUT_GET4]    10
+[SB_INPUT_GET5]    14
+[SB_INPUT_GET6]     8
+[SB_INPUT_GET7]    17
+[SB_INPUT_GET8]    12
+[SB_INPUT_GET9]     8
+[SB_OUTPUT_GET0]     7
+[SB_OUTPUT_GET1]    12
+[SB_OUTPUT_GET10]    10
+[SB_OUTPUT_GET11]     8
+[SB_OUTPUT_GET12]     9
+[SB_OUTPUT_GET13]     7
+[SB_OUTPUT_GET14]    10
+[SB_OUTPUT_GET15]    13
+[SB_OUTPUT_GET2]     9
+[SB_OUTPUT_GET3]     6
+[SB_OUTPUT_GET4]    10
+[SB_OUTPUT_GET5]    14
+[SB_OUTPUT_GET6]     8
+[SB_OUTPUT_GET7]    17
+[SB_OUTPUT_GET8]    12
+[SB_OUTPUT_GET9]     8
+[SB_REPORT[0]]     1
+[SB_REPORT[10]]     1
+[SB_REPORT[11]]     1
+[SB_REPORT[12]]     1
+[SB_REPORT[13]]     1
+[SB_REPORT[14]]     1
+[SB_REPORT[15]]     1
+[SB_REPORT[1]]     1
+[SB_REPORT[2]]     1
+[SB_REPORT[3]]     1
+[SB_REPORT[4]]     1
+[SB_REPORT[5]]     1
+[SB_REPORT[6]]     1
+[SB_REPORT[7]]     1
+[SB_REPORT[8]]     1
+[SB_REPORT[9]]     1
+[TPRGED]     1
+[TRACE]     2
+[VCS_TR_AUTO]     1
+$finish called from file "/tools/synopsys/vcs/vcs-mx_vL-2016.06/etc/uvm-1.1/base/uvm_root.svh", line 439.
+$finish at simulation time                      45050.0ns
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 45050000 ps
+CPU Time:      1.100 seconds;       Data structure size:   0.6Mb
+Tue Feb  8 07:41:10 2022

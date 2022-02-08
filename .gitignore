@@ -1,0 +1,11 @@
+*.log 
+csrc
+simv.daidir
+simv
+ucli.key
+vc_hdrs.h
+DVEfiles
+simv.cst
+*.vpd
+*.lg
+tags
