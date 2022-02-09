@@ -1,0 +1,15 @@
+{signal: [
+  {name: 'clk', wave: 'p.................'},
+  {name: 'din', wave: 'x34561....7|...x..', data:['A0', 'A1', 'A2', 'A3','payload']},
+  {name: 'frame_n', wave: '10............1...'},
+  {name: 'valid_n', wave: 'x....1....0....1..'},
+  
+  {},
+  {name: 'busy_n', wave: 'x.........1.......'},
+  {},
+  
+  {name: 'valido_n', wave: 'x..........1......'},
+  {name: 'dout', wave: 'x..........7|...x.',data:['payload']},
+  {name: 'frameo_n', wave: 'x..............1..'},
+
+]}
